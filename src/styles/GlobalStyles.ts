@@ -15,5 +15,6 @@ export const GlobalStyles = createGlobalStyle`
   }
   body {
     background-color: #222831;
+    font-family: 'Jost', sans-serif;
   }
 `
