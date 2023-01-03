@@ -26,5 +26,7 @@ export const ContainerLateralBar = styled.div`
     bottom: -150px;
     right: -50px;
     z-index: 9;
+    filter: invert(1);
+    position: absolute;
   }
 `
