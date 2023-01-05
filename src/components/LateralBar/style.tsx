@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devices } from "../../styles/Responsive";
 
 export const ContainerLateralBar = styled.div`
   width: 2px;
@@ -9,6 +10,9 @@ export const ContainerLateralBar = styled.div`
   justify-content: space-between;
   align-items: center;
   position: relative;
+  @media ${devices.laptop} {
+    display: none;
+  }
   .circle {
     width: 30px;
     height: 30px;

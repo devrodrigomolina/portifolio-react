@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devices } from "../../../styles/Responsive";
 
 export const MenuContainer = styled.div``;
 
@@ -6,11 +7,19 @@ export const Label = styled.label`
   display: flex;
   flex-direction: column;
   width: 40px;
+  @media ${devices.tablet} {
+    width: 35px;
+  }
+
   cursor: pointer;
   span {
     background: #fff;
     border-radius: 10px;
     height: 4px;
+    @media ${devices.tablet} {
+      height: 3px;
+      margin: 4px 0;
+  }
     margin: 5px 0;
     transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
     &:nth-of-type(1) {

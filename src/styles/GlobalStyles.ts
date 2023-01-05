@@ -17,4 +17,8 @@ export const GlobalStyles = createGlobalStyle`
     background-color: #222831;
     font-family: 'Jost', sans-serif;
   }
+  img {
+    width: 100%;
+    display: block;
+  }
 `
