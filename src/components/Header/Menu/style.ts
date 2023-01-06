@@ -19,7 +19,7 @@ export const Label = styled.label`
     @media ${devices.tablet} {
       height: 3px;
       margin: 4px 0;
-  }
+    }
     margin: 5px 0;
     transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
     &:nth-of-type(1) {
@@ -39,6 +39,9 @@ export const Label = styled.label`
   input[type="checkbox"]:checked ~ span:nth-of-type(1) {
     transform-origin: bottom;
     transform: rotatez(45deg) translate(8px, 0px);
+    @media ${devices.tablet} {
+      transform: rotatez(45deg) translate(3px, 0px);
+    }
   }
 
   input[type="checkbox"]:checked ~ span:nth-of-type(2) {
@@ -50,5 +53,8 @@ export const Label = styled.label`
     transform-origin: bottom;
     width: 50%;
     transform: translate(20px, -9px) rotatez(45deg);
+    @media ${devices.tablet} {
+      transform: translate(16px, -7px) rotatez(45deg);
+    }
   }
 `;

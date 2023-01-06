@@ -2,12 +2,11 @@ import styled from "styled-components";
 import { devices } from "../../styles/Responsive";
 
 export const AboutSection = styled.section`
-  background-color: transparent;
-  background-image: linear-gradient(0deg, #31363c 0%, #222831 100%);
+  max-height: 100vh;
   .bg-text {
     font-size: 18vw;
     position: relative;
-    bottom: 460px;
+    bottom: 220px;
     color: #31363cba;
     text-align: center;
     font-style: italic;
@@ -21,7 +20,7 @@ export const AboutSection = styled.section`
 `;
 export const AboutContainer = styled.section`
   max-width: 80vw;
-  min-height: 100vh;
+ /*  min-height: 100vh; */
   display: flex;
   margin: 0 auto;
   padding-top: 50px;
@@ -191,15 +190,14 @@ export const RigthSide = styled.div`
     top: 420px; 
   }
   .container-photo {
-    width: 700px;
-    height: 700px;
+    width: 600px;
+    height: 600px;
     background-color: #29a587;
     border-radius: 50%;
     display: flex;
     align-items: center;
     position: absolute;
-    top: 5%;
-    right: -100px;
+    top: 10%;
     @media ${devices.laptopL} {
       width: 500px;
       height: 500px;
@@ -216,15 +214,15 @@ export const RigthSide = styled.div`
       height: 330px;
     }
     @media ${devices.mobileL} {
-      width: 300px;
-      height: 280px;
-      right: -40px;
+      width: 270px;
+      height: 270px;
+      right: 0;
     }
     
     .myphoto {
       border-bottom-left-radius: 47%;
-      border-bottom-right-radius: 47%;
-      height: 830px;
+      border-bottom-right-radius: 47%;     
+      height: 730px;
       position: absolute;
       top: -115px;
       @media ${devices.laptopL} {
@@ -237,7 +235,8 @@ export const RigthSide = styled.div`
         height: 450px;    
       }
       @media ${devices.mobileL} {
-        height: 400px; 
+        height: 365px; 
+        top: -90px;
       }
     
     }
