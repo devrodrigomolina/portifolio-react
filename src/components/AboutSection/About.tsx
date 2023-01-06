@@ -16,9 +16,9 @@ const About = () => {
           <LateralBar />
           <div className="infos">
 
-          <h3 className='hello'>HELLO, <span>MY NAME IS</span></h3>
+          <h3 className='hello'>OLÁ, <span>MEU NOME É</span></h3>
           <h1 className='name'><span>RODRIGO</span> MOLINA</h1>
-          <h3 className='iam'>I AM <span className='webdev'>Web Developer</span></h3>
+          <h3 className='iam'>EU SOU<span className='webdev'>Desenvolvedor Front end</span></h3>
 
           <p className='aboutme'>Possuo uma vasta experiencia com Desenvolvimento front end, com as principais tecnologias do mercado.</p>
 
@@ -26,15 +26,15 @@ const About = () => {
             <a href="https://www.linkedin.com/in/devrodrigomolina/" target="_blank">
               <BsLinkedin className='linkedin' />
             </a>
-            <a href="">
+            <a href="https://github.com/devrodrigomolina"  target="_blank">
               <AiFillGithub className='github' />
             </a>
-            <a href="">
+            <a href="https://wa.me/5544998070146"  target="_blank">
               <AiOutlineWhatsApp className='whatsapp' />
             </a>
           </div>
           <div className="btns">
-            <a href="#" className='btn'>
+            <a href=""  target="_blank" className='btn'>
               <span>DOWNLOAD CV</span>
             </a>
             <a href="" className='skills'>SKILLS</a>
