@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { devices } from "../../styles/Responsive";
 
 export const AboutSection = styled.section`
-  max-height: 100vh;
+ 
   .bg-text {
     font-size: 18vw;
     position: relative;
