@@ -5,11 +5,26 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
+import { FaArrowRight } from "react-icons/fa";
 
 const Cards = () => {
   return (
     <C.ContainerCards>
-       <Swiper
+      <Swiper
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1080: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        }}
         slidesPerView={3}
         spaceBetween={30}
         pagination={{
@@ -18,17 +33,96 @@ const Cards = () => {
         modules={[Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide className="swiper-slide">Slide 1</SwiperSlide>
-        <SwiperSlide className="swiper-slide">Slide 2</SwiperSlide>
-        <SwiperSlide className="swiper-slide">Slide 3</SwiperSlide>
-        <SwiperSlide className="swiper-slide">Slide 3</SwiperSlide>
-        <SwiperSlide className="swiper-slide">Slide 3</SwiperSlide>
-        <SwiperSlide className="swiper-slide">Slide 3</SwiperSlide>
-        <SwiperSlide className="swiper-slide">Slide 3</SwiperSlide>
+        <SwiperSlide className="swiper-slide">
+          <div className="infos-card">
+            <h3 className="title">DESENVOLVEDOR WEB</h3>
+            <h1 className="subtitle">Sites & aplicações</h1>
+            <p className="desc">
+              Atuo no desenvolvimento de aplicações performática e responsiva
+              com as melhores tecnologias do mercado
+            </p>
+            <a href="#" className="arrow">
+              Ver projetos <FaArrowRight className="icon" />
+            </a>
+            <div className="image-pat" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slide">
+          <div className="infos-card">
+            <h3 className="title">DESENVOLVEDOR WEB</h3>
+            <h1 className="subtitle">Sites & aplicações</h1>
+            <p className="desc">
+              Atuo no desenvolvimento de aplicações performática e responsiva
+              com as melhores tecnologias do mercado
+            </p>
+            <a href="#" className="arrow">
+              Ver projetos <FaArrowRight className="icon" />
+            </a>
+            <div className="image-pat" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slide">
+          <div className="infos-card">
+            <h3 className="title">DESENVOLVEDOR WEB</h3>
+            <h1 className="subtitle">Sites & aplicações</h1>
+            <p className="desc">
+              Atuo no desenvolvimento de aplicações performática e responsiva
+              com as melhores tecnologias do mercado
+            </p>
+            <a href="#" className="arrow">
+              Ver projetos <FaArrowRight className="icon" />
+            </a>
+            <div className="image-pat" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slide">
+          <div className="infos-card">
+            <h3 className="title">DESENVOLVEDOR WEB</h3>
+            <h1 className="subtitle">Sites & aplicações</h1>
+            <p className="desc">
+              Atuo no desenvolvimento de aplicações performática e responsiva
+              com as melhores tecnologias do mercado
+            </p>
+            <a href="#" className="arrow">
+              Ver projetos <FaArrowRight className="icon" />
+            </a>
+            <div className="image-pat" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slide">
+          <div className="infos-card">
+            <h3 className="title">DESENVOLVEDOR WEB</h3>
+            <h1 className="subtitle">Sites & aplicações</h1>
+            <p className="desc">
+              Atuo no desenvolvimento de aplicações performática e responsiva
+              com as melhores tecnologias do mercado
+            </p>
+            <a href="#" className="arrow">
+              Ver projetos <FaArrowRight className="icon" />
+            </a>
+            <div className="image-pat" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slide">
+          <div className="infos-card">
+            <h3 className="title">DESENVOLVEDOR WEB</h3>
+            <h1 className="subtitle">Sites & aplicações</h1>
+            <p className="desc">
+              Atuo no desenvolvimento de aplicações performática e responsiva
+              com as melhores tecnologias do mercado
+            </p>
+            <a href="#" className="arrow">
+              Ver projetos <FaArrowRight className="icon" />
+            </a>
+            <div className="image-pat" />
+          </div>
+        </SwiperSlide>
       </Swiper>
       <div className="bar-lateral">
         <LateralBar />
       </div>
+
+      <h1 className="bg-text">Serviços</h1>
     </C.ContainerCards>
   );
 };
