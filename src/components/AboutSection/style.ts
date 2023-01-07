@@ -13,6 +13,7 @@ export const AboutSection = styled.section`
     font-weight: 100;
     font-family: "Caveat Brush", cursive;
     z-index: 1;
+    cursor: default;
     @media ${devices.tablet || devices.mobileL} {
       bottom: 260px
     }
