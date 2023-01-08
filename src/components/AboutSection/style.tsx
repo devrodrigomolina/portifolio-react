@@ -3,12 +3,14 @@ import { devices } from "../../styles/Responsive";
 
 export const AboutSection = styled.section`
   height: 100vh;
-  margin-top: 150px;
+  padding-top: 100px;
+  background-color: transparent;
+    background-image: linear-gradient(0deg, #31363c 0%, #222831 100%);
   .bg-text {
     font-size: 18vw;
     position: relative;
     bottom: 220px;
-    color: #31363cba;
+    color: rgba(255, 255, 255, 0.02);
     text-align: center;
     font-style: italic;
     font-weight: 100;

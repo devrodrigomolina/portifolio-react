@@ -19,8 +19,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     background-color: #222831;
     font-family: 'Jost', sans-serif;
-    background-color: transparent;
-  background-image: linear-gradient(0deg, #31363c 0%, #222831 100%);
+  
   }
   img {
     width: 100%;
