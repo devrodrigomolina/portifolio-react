@@ -15,8 +15,12 @@ export const ContainerCards = styled.div`
     z-index: -1;
     cursor: default;
   }
-
+  position: relative;
   .bar-lateral {
+    position: absolute;
+    height: 600px;
+    right: 0;
+    top: -70px;
     margin-right: 100px;
   }
   .mySwiper {
