@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import pat2 from "../../assets/pat2.png";
+import { devices } from "../../styles/Responsive";
 
 export const ContainerCards = styled.div`
   .bg-text {
@@ -27,6 +28,10 @@ export const ContainerCards = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    @media ${devices.mobileM && devices.mobileL} {
+      max-width: 90vw;
+      padding: 0;
+    }
     .swiper-slide {
       width: 398px;
       margin-right: 40px;
@@ -36,7 +41,7 @@ export const ContainerCards = styled.div`
       border-radius: 18px;
       position: relative;
       overflow: hidden;
-
+   
       .infos-card {
         display: flex;
         flex-direction: column;
@@ -48,11 +53,17 @@ export const ContainerCards = styled.div`
         }
         .subtitle {
           margin-bottom: 10px;
+          @media ${devices.laptopL} {
+            font-size: 1.6rem;
+          }
         }
         .desc {
           text-align: start;
           opacity: 0.8;
           font-size: 1.1rem;
+          @media ${devices.laptopL} {
+            font-size: 1rem;
+          }
         }
         .arrow {
           height: 22px;
@@ -99,6 +110,10 @@ export const ContainerCards = styled.div`
           background-position: center center;
           background-repeat: no-repeat;
           background-size: contain;
+          @media ${devices.laptopL} {
+            width: 100px;
+            height: 100px;
+          }
         }
       }
     }

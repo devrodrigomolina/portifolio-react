@@ -5,6 +5,10 @@ export const Header = styled.header`
   width: 100%;
   height: 90px;
   padding: 30px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background: #1d222a;
   display: flex;
   justify-content: space-between;
 `

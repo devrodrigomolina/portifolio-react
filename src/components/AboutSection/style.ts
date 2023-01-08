@@ -2,7 +2,8 @@ import styled from "styled-components";
 import { devices } from "../../styles/Responsive";
 
 export const AboutSection = styled.section`
- 
+  height: 100vh;
+  margin-top: 150px;
   .bg-text {
     font-size: 18vw;
     position: relative;
@@ -24,6 +25,7 @@ export const AboutContainer = styled.section`
  /*  min-height: 100vh; */
   display: flex;
   margin: 0 auto;
+  margin-top: 50px;
   padding-top: 50px;
   @media ${devices.laptop} {
     flex-direction: column;
