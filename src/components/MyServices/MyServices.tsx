@@ -8,6 +8,7 @@ const MyServices = () => {
     <C.ContainerServices>
       <Titles title='OQUE EU FAÇO' subtitle='meus' secondSubtitle='serviços'/>
       <Cards />
+      <h1 className="bg-text">Serviços</h1>
     </C.ContainerServices>
   )
 }

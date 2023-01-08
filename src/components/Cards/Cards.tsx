@@ -130,7 +130,7 @@ const Cards = () => {
         <LateralBar />
       </div>
 
-      <h1 className="bg-text">Serviços</h1>
+      
     </C.ContainerCards>
   );
 };
