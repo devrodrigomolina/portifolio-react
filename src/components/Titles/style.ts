@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devices } from "../../styles/Responsive";
 
 export const ContainerTitle = styled.div`
  text-align: center;
@@ -13,6 +14,9 @@ export const ContainerTitle = styled.div`
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    @media ${devices.mobileL} {
+      font-size: 24px;
+    }
   }
   .container-subtitle {
     text-align: center;
@@ -23,6 +27,9 @@ export const ContainerTitle = styled.div`
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       line-height: 1;
       font-weight: 700;
+      @media ${devices.mobileL} {
+        font-size: 12px;
+      }
     }
     .second-subtitle {
       font-size: 1.4rem;
@@ -32,6 +39,10 @@ export const ContainerTitle = styled.div`
       font-family: "Caveat Brush", cursive;
       font-style: italic;
       margin-left: 10px;
+      @media ${devices.mobileL} {
+        font-size: 16px;
+        margin-left: 0;
+      }
     }
   }
 `

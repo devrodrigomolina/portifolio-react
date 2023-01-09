@@ -2,7 +2,39 @@ import styled from "styled-components";
 import pat2 from "../../assets/pat2.png";
 import { devices } from "../../styles/Responsive";
 
-export const ContainerCards = styled.div`
+type CardsTypes = {
+  height?: number | undefined
+}
+
+export const ContainerCards = styled.div<CardsTypes>`
+  width: 398px;
+  height: ${props => props.height ? props.height : 396}px;
+  background: #1d222a;
+  padding: 30px 35px;
+  border-radius: 18px;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+  .container-image {
+    width: 100%;
+    height: 250px;
+    background-color: #faf1a4;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 30px;
+    .image {
+      width: 100%;
+      object-fit: cover;
+      box-shadow: 2px 2px 10px black;
+      transition: all .6s;
+      &:hover {
+        -webkit-transform: scale(1.02);
+        transform: scale(1.02);
+      }
+    }
+  }
   .bg-text {
     font-size: 18vw;
     position: relative;
@@ -15,37 +47,6 @@ export const ContainerCards = styled.div`
     z-index: -1;
     cursor: default;
   }
-  position: relative;
-  .bar-lateral {
-    position: absolute;
-    height: 600px;
-    right: 0;
-    top: -70px;
-    margin-right: 100px;
-  }
-  .mySwiper {
-    width: 100vw;
-    max-width: 70vw;
-    padding: 0 20px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    @media ${devices.mobileM && devices.mobileL} {
-      max-width: 90vw;
-      padding: 0;
-    }
-    .swiper-slide {
-      width: 398px;
-      margin-right: 40px;
-      height: 396px;
-      background: #1d222a;
-      padding: 30px 35px;
-      border-radius: 18px;
-      position: relative;
-      overflow: hidden;
-   
       .infos-card {
         display: flex;
         flex-direction: column;
@@ -54,6 +55,10 @@ export const ContainerCards = styled.div`
         .title {
           font-size: 1rem;
           margin-bottom: 50px;
+        }
+        .project-type {
+          color: #29a587;
+          margin-bottom: 5px;
         }
         .subtitle {
           margin-bottom: 10px;
@@ -120,58 +125,7 @@ export const ContainerCards = styled.div`
           }
         }
       }
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .swiper-pagination {
-      position: relative;
-      display: inline-block;
-      width: auto;
-      margin-top: 60px;
-
-      .swiper-pagination-bullet {
-        width: 8px;
-        height: 8px;
-        top: 0;
-        display: inline-block;
-        border-radius: 50%;
-        opacity: 1 !important;
-        background-color: black;
-        border: 2px solid white;
-        transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
-        -webkit-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
-        margin: 0;
-        margin: 0 10px;
-        &:first-child {
-          margin-left: 0;
-        }
-        &:last-child {
-          margin-right: 0;
-        }
-        &::before {
-          position: absolute;
-          left: 0;
-          z-index: -1;
-          top: 50%;
-          content: "";
-          width: 100%;
-          height: 2px;
-          background: white;
-          display: block;
-        }
-      }
-      .swiper-pagination-bullet-active {
-        width: 13px;
-        height: 13px;
-        position: relative;
-        top: 2px;
-        background-color: #29a587;
-      }
-    }
-  }
+    
+  
+  
 `;
