@@ -2,10 +2,13 @@ import styled from "styled-components";
 import { devices } from "../../styles/Responsive";
 
 export const AboutSection = styled.section`
-  height: 100vh;
-  padding-top: 100px;
+  height: auto;
+  margin-top: 140px;
   background-color: transparent;
-    background-image: linear-gradient(0deg, #31363c 0%, #222831 100%);
+  background-image: linear-gradient(0deg, #31363c 0%, #222831 100%);
+  @media ${devices.tablet || devices.mobileL} {
+    margin-top: 0;
+  }
   .bg-text {
     font-size: 18vw;
     position: relative;
@@ -18,23 +21,24 @@ export const AboutSection = styled.section`
     z-index: 1;
     cursor: default;
     @media ${devices.tablet || devices.mobileL} {
-      bottom: 260px
+      bottom: 260px;
     }
   }
 `;
 export const AboutContainer = styled.section`
   max-width: 80vw;
- /*  min-height: 100vh; */
+  min-height: 100%;
   display: flex;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 60px;
   padding-top: 50px;
   @media ${devices.laptop} {
     flex-direction: column;
     align-items: center;
   }
   @media ${devices.tablet || devices.mobileL} {
-    padding-top: 0;
+    margin-top: 60px;
+    max-width: 100vw;
   }
   
 `;
@@ -49,6 +53,7 @@ export const LeftSide = styled.div`
     align-items: center;
     text-align: center;
     height: auto;
+
   }
   
   .infos {
@@ -99,7 +104,7 @@ export const LeftSide = styled.div`
         margin-right: 0;
       }
       @media ${devices.tablet || devices.mobileL} {
-        margin-top: 590px;
+        margin-top: 490px;
       }
     }
     .sociais {
