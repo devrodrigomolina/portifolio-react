@@ -2,9 +2,9 @@ import React from 'react'
 import * as C from './style'
 
 interface TITLEPROPS {
-  title: string,
-  subtitle: string,
-  secondSubtitle: string
+  title?: string,
+  subtitle?: string,
+  secondSubtitle?: string
 }
 
 const Titles = ({ title, subtitle, secondSubtitle }: TITLEPROPS) => {
