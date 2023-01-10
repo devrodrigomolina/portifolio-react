@@ -8,7 +8,7 @@ import LateralBar from "../LateralBar/LateralBar";
 const Projects = () => {
   return (
     <C.ContainerProjects>
-      <Titles title="PORTIFÓLIO" subtitle="MEUS" secondSubtitle="PROJETOS" />
+      <Titles title="PORTIFÓLIO" subtitle="MEUS" secondSubtitle="Projetos" />
       <div className="cards-container">
         {ProjectsJson.map((project) => (
           <Cards
