@@ -15,9 +15,8 @@ export const AboutSection = styled.section`
     bottom: 220px;
     color: rgba(255, 255, 255, 0.02);
     text-align: center;
-    font-style: italic;
-    font-weight: 100;
-    font-family: "Caveat Brush", cursive;
+    font-weight: 900;
+    font-family: "Caveat", cursive;
     z-index: 1;
     cursor: default;
     @media ${devices.tablet || devices.mobileL} {
@@ -87,10 +86,9 @@ export const LeftSide = styled.div`
       color: white;
       .webdev {
         margin-left: 10px;
-        font-family: "Caveat Brush", cursive;
+        font-family: "Caveat", cursive;
         font-size: 1.6rem;
-        font-weight: 400;
-        font-style: italic;
+        font-weight: bold;
       }
     }
     .aboutme {

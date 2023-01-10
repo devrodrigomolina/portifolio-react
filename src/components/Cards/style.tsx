@@ -41,9 +41,8 @@ export const ContainerCards = styled.div<CardsTypes>`
     bottom: 300px;
     color: #353a41b9;
     text-align: center;
-    font-style: italic;
-    font-weight: 100;
-    font-family: "Caveat Brush", cursive;
+    font-weight: bold;
+    font-family: "Caveat", cursive;
     z-index: -1;
     cursor: default;
   }

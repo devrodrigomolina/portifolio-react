@@ -13,7 +13,7 @@ import LateralBar from "../LateralBar/LateralBar";
 const MyServices = () => {
   return (
     <C.ContainerServices>
-      <Titles title="OQUE EU FAÇO" subtitle="meus" secondSubtitle="serviços" />
+      <Titles title="OQUE EU FAÇO" subtitle="MEUS" secondSubtitle="Serviços" />
       
       <Swiper
         breakpoints={{

@@ -47,9 +47,8 @@ export const ContainerProjects = styled.div`
   bottom: 220px;
   color: rgba(255, 255, 255, 0.02);
   text-align: center;
-  font-style: italic;
-  font-weight: 100;
-  font-family: "Caveat Brush", cursive;
+  font-weight: bold;
+  font-family: "Caveat", cursive;
   z-index: 0;
   cursor: default;
 

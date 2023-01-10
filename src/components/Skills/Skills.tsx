@@ -8,7 +8,7 @@ import { SkillsJson } from './SkillsJson'
 const Skills = () => {
   return (
     <C.ContainerSkills>
-      <Titles title='HABILIDADES PROFISSIONAIS' subtitle='MEU' secondSubtitle='TALENTO'/>
+      <Titles title='HABILIDADES PROFISSIONAIS' subtitle='MEU' secondSubtitle='Talento'/>
       <div className="habilities">
         <div className="bar">
           <LateralBar />

@@ -12,7 +12,7 @@ export const ContainerTitle = styled.div`
     line-height: 1.3;
     color: white;
     font-weight: 700;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 0.05em;
     @media ${devices.mobileL} {
       font-size: 24px;
@@ -20,7 +20,7 @@ export const ContainerTitle = styled.div`
   }
   .container-subtitle {
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     .subtitle {
       font-size: 1rem;
       color: #29a587;
@@ -34,10 +34,8 @@ export const ContainerTitle = styled.div`
     .second-subtitle {
       font-size: 1.4rem;
       color: white;
-      font-style: italic;
-      font-weight: 100;
-      font-family: "Caveat Brush", cursive;
-      font-style: italic;
+      font-weight: bold;
+      font-family: "Caveat", cursive;
       margin-left: 10px;
       @media ${devices.mobileL} {
         font-size: 16px;
