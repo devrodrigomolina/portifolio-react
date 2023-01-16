@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devices } from "../../styles/Responsive";
 
 type ShowItemsType = {
   showItems: boolean
@@ -21,19 +22,24 @@ export const ContainerHistory = styled.div`
   display: flex;
   width: 80vw;
   margin: 0 auto;
+  @media ${devices.laptop} {
+    flex-direction: column;
+  }
 `
 
 export const LeftSide = styled.div<ShowItemsType>`
   width: 50%;
   margin-right: 15px;
   position: relative;
+  @media ${devices.laptop} {
+    margin-bottom: 130px;
+  }
   .courses {
     border-bottom: 2px solid #a3a5a7;
     color: white;
     max-height: ${props => (props.showItems ? "500px" : "100px")};
     transition: all 1s;
     overflow: hidden;
-    
     .container-instituition {
       width: 100%;
       padding: 40px;
