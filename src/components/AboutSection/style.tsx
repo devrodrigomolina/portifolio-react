@@ -10,15 +10,6 @@ export const AboutSection = styled.section`
     margin-top: 0;
   }
   .bg-text {
-    font-size: 18vw;
-    position: relative;
-    bottom: 220px;
-    color: rgba(255, 255, 255, 0.02);
-    text-align: center;
-    font-weight: 900;
-    font-family: "Caveat", cursive;
-    z-index: 1;
-    cursor: default;
     @media ${devices.tablet || devices.mobileL} {
       bottom: 260px;
     }
