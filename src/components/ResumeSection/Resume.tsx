@@ -1,43 +1,34 @@
-import React, { useState } from 'react'
-import Titles from '../Titles/Titles'
-import * as C from './style'
-import { JSONEducation } from './JSONEducation'
+import LateralBar from "../LateralBar/LateralBar";
+import Titles from "../Titles/Titles";
+import CoursesAndExperience from "./CoursesAndExperience/CoursesAndExperience";
+import { JSONEducation, JSONExperience } from "./DataJSON";
+import * as C from "./style";
 
 const Resume = () => {
-  const [showItems, setShowItems] = useState<boolean>(false)
-
   return (
     <C.ContainerResume>
-      <Titles title='RESUMO' subtitle='MINHA' secondSubtitle='Historia' />
+      <Titles title="RESUMO" subtitle="MINHA" secondSubtitle="Historia" />
       <C.ContainerHistory>
-        <C.LeftSide showItems={showItems}>
-          
-          <h1 className='titles'>Educação</h1>
-          {JSONEducation.map(elements => (
-         
-          <div className="courses">
-            <div className="container-instituition"  onClick={() => setShowItems(prevState => !prevState)}>
-              <span className='name-instituition'>{elements.name}</span>
-            </div>
-
-            <div className="itens-courses">
-              <div className="category-date-course">
-                <span className='name-course'>{elements.course}</span>
-                <span className='date'>{elements.initialDate} - <span className='date-end'>{elements.endDate}</span></span>
-              </div>
-              <p className='desc-course'>{elements.desc}</p>
-            </div>
-          </div>
-          )) }
+      <div className="bar">
+          <LateralBar />
+        </div>
+        <C.LeftSide>
+          <h1 className="titles">Educação</h1>
+          {JSONEducation.map((elements) => (
+            <CoursesAndExperience key={elements.id} elements={elements} />
+          ))}
         </C.LeftSide>
 
         <C.RightSide>
-          <h1 className='titles'>Experiencia</h1>
-
+          <h1 className="titles">Experiencia</h1>
+          {JSONExperience.map((elements) => (
+            <CoursesAndExperience key={elements.id} elements={elements}/>
+          ))}
         </C.RightSide>
       </C.ContainerHistory>
+      <h1 className="bg-text">História</h1>
     </C.ContainerResume>
-  )
-}
+  );
+};
 
-export default Resume
+export default Resume;
