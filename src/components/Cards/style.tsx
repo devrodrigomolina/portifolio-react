@@ -35,17 +35,7 @@ export const ContainerCards = styled.div<CardsTypes>`
       }
     }
   }
-  .bg-text {
-    font-size: 18vw;
-    position: relative;
-    bottom: 300px;
-    color: #353a41b9;
-    text-align: center;
-    font-weight: bold;
-    font-family: "Caveat", cursive;
-    z-index: -1;
-    cursor: default;
-  }
+ 
       .infos-card {
         display: flex;
         flex-direction: column;
