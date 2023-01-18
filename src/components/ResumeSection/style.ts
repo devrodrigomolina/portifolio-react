@@ -6,7 +6,7 @@ import { devices } from "../../styles/Responsive";
 export const ContainerResume = styled.div`
   background-color: transparent;
   background-image: linear-gradient(180deg, #31363c 0%, #222831 100%);
-  margin-bottom: 300px;
+  margin-bottom: 150px;
  .titles {
     font-size: 1.8rem;
     text-align: center;
