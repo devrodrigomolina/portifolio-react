@@ -12,7 +12,7 @@ export const ContainerTitle = styled.div`
     line-height: 1.3;
     color: white;
     font-weight: 700;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     letter-spacing: 0.05em;
     @media ${devices.mobileL} {
       font-size: 24px;
@@ -22,9 +22,8 @@ export const ContainerTitle = styled.div`
     text-align: center;
     /* text-transform: uppercase; */
     .subtitle {
-      font-size: 1rem;
+      font-size: 14px;
       color: #29a587;
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       line-height: 1;
       font-weight: 700;
       @media ${devices.mobileL} {
