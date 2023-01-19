@@ -26,6 +26,24 @@ export const GlobalStyles = createGlobalStyle`
     width: 100%;
     display: block;
   }
+  input {
+    position: relative;
+    padding: 0 30px;
+    display: block;
+    width: 100%;
+    height: 60px;
+    font-family: "Jost";
+    font-size: 16px;
+    outline: 0;
+    font-weight: 400;
+    border-radius: 30px;
+    color: #fff;
+    background: #1d222a;
+    border: 2px solid #a3a5a7;
+    transition: all 0.7s cubic-bezier(0.3, 0, 0.3, 1);
+    -webkit-transition: all 0.7s cubic-bezier(0.3, 0, 0.3, 1);
+  }
+
   .bg-text {
     font-size: 18vw;
     position: relative;
