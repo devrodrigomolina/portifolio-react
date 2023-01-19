@@ -242,7 +242,7 @@ export const RigthSide = styled.div`
     .image-pat1,
     .image-pat2,
     .image-pat3 {
-      opacity: 0.6;
+      opacity: 0.5;
       filter: invert(1);
       position: absolute;
       z-index: -1;

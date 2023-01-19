@@ -97,7 +97,7 @@ export const ContainerCards = styled.div<CardsTypes>`
           }
         }
         .image-pat {
-          opacity: 0.6;
+          opacity: 0.5;
           filter: invert(1);
           position: absolute;
           right: -24px;
