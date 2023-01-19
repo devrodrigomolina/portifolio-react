@@ -31,7 +31,7 @@ export const ContainerTitle = styled.div`
       }
     }
     .second-subtitle {
-      font-size: 1.4rem;
+      font-size: 2rem;
       color: white;
       font-weight: bold;
       font-family: "Caveat", cursive;
