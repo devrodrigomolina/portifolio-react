@@ -1,6 +1,7 @@
 
 import About from "./components/AboutSection/About";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import MyServices from "./components/MyServices/MyServices";
 import Projects from "./components/Projects/Projects";
@@ -20,6 +21,7 @@ function App() {
         <Resume />
         <Testimonials />
         <Contact />
+        <Footer />
         <GlobalStyles />
       </>
 
