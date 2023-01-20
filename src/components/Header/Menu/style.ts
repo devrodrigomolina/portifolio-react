@@ -1,12 +1,71 @@
 import styled from "styled-components";
 import { devices } from "../../../styles/Responsive";
 
-export const MenuContainer = styled.div``;
+
+type MenuToogleType = {
+  check: boolean
+}
+
+export const MenuContainer = styled.div``
+
+
+export const MenuNavigation = styled.div<MenuToogleType>`
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 170px;
+  justify-content: space-between;
+  a {
+    color: #FFF;
+    line-height: 1;
+    font-family: "Jost";
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 1.3rem;
+    font-weight: 700;
+    transition: all .5s;
+    opacity: ${props => props.check ? '1' : '0'};
+    &:hover {
+      color: #29a587;
+    }
+  }
+  .sociais {
+    max-width: 120px;
+    color: #FFF;
+  }
+`;
+export const MenuToggle = styled.div<MenuToogleType>`
+  width: ${props => props.check ? '35%' : '0'};
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 1s cubic-bezier(0.3, 0, 0.3, 1);
+  -webkit-transition: all 1s cubic-bezier(0.3, 0, 0.3, 1);
+  background: #31363c;
+  border-left: 2px solid rgba(255, 255, 255, 0.09);
+  clip-path: polygon(${props => props.check ? '0 0, 100% 0%, 100% 100%, 0 100%' : '0 0, 100% 0%, 100% 100%, 105% 100%'});
+  .lateral-bar {
+    height: 600px;
+    position: absolute;
+    transform: scale(-1);
+    transform: rotateX(180deg);
+    transition: all .2s;
+    left: 90px;
+    opacity: ${props => props.check ? '1' : '0'};
+  }
+`;
 
 export const Label = styled.label`
   display: flex;
   flex-direction: column;
   width: 40px;
+  position: absolute;
+  right: 40px;
+  z-index: 999;
   @media ${devices.tablet} {
     width: 35px;
   }
