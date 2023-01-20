@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devices } from "../../styles/Responsive";
 
 export const ContainerSkills = styled.div`
   .habilities {
