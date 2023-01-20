@@ -7,10 +7,11 @@ import { AiOutlineWhatsApp } from 'react-icons/ai'
 import myphoto from '../../assets/EU8.png'
 import pat1 from '../../assets/pat1.png'
 import pat2 from '../../assets/pat2.png'
+import Socias from '../Sociais/Socias'
 
 const About = () => {
   return (
-    <C.AboutSection>
+    <C.AboutSection id='home'>
       <C.AboutContainer>
         <C.LeftSide>
           <LateralBar />
@@ -23,16 +24,9 @@ const About = () => {
           <p className='aboutme'>Possuo uma vasta experiencia com Desenvolvimento front end, com as principais tecnologias do mercado.</p>
 
           <div className="sociais">
-            <a href="https://www.linkedin.com/in/devrodrigomolina/" target="_blank">
-              <BsLinkedin className='linkedin' />
-            </a>
-            <a href="https://github.com/devrodrigomolina"  target="_blank">
-              <AiFillGithub className='github' />
-            </a>
-            <a href="https://wa.me/5544998070146"  target="_blank">
-              <AiOutlineWhatsApp className='whatsapp' />
-            </a>
+            <Socias />
           </div>
+          
           <div className="btns">
             <a href=""  target="_blank" className='btn'>
               <span>DOWNLOAD CV</span>
