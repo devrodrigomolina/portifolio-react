@@ -18,7 +18,7 @@ const Contact = () => {
 
   
   return (
-    <C.ContainerContactForm>
+    <C.ContainerContactForm id="contact">
       <Titles
         title="ENTRE EM CONTATO"
         subtitle="VAMOS"

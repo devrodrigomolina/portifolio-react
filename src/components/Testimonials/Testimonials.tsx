@@ -12,7 +12,7 @@ import LateralBar from "../LateralBar/LateralBar";
 
 const Testimonials = () => {
   return (
-    <C.ContainerTestimonials>
+    <C.ContainerTestimonials id="testimonials">
       <Titles title="avaliações" subtitle="O QUE" secondSubtitle="As Pessoas Dizem" />
       <Swiper
         breakpoints={{

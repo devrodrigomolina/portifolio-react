@@ -6,7 +6,7 @@ import * as C from "./style";
 
 const Resume = () => {
   return (
-    <C.ContainerResume>
+    <C.ContainerResume id="resume">
       <Titles title="RESUMO" subtitle="MINHA" secondSubtitle="Historia" />
       <C.ContainerHistory>
       <div className="bar">
