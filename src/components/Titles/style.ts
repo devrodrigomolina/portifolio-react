@@ -16,6 +16,7 @@ export const ContainerTitle = styled.div`
     letter-spacing: 0.05em;
     @media ${devices.mobileL} {
       font-size: 24px;
+      padding: 0 18px;
     }
   }
   .container-subtitle {
