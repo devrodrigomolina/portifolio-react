@@ -22,6 +22,10 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Jost', sans-serif;
   
   }
+  a {
+    cursor: pointer;
+    text-decoration: none;
+  }
   img {
     width: 100%;
     display: block;
