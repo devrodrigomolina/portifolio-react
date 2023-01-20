@@ -37,6 +37,9 @@ export const MenuNavigation = styled.div<MenuToogleType>`
 `;
 export const MenuToggle = styled.div<MenuToogleType>`
   width: ${props => props.check ? '35%' : '0'};
+  @media ${devices.laptop} {
+    width: ${props => props.check ? '100%' : '0'};
+  }
   height: 100vh;
   display: flex;
   align-items: center;
