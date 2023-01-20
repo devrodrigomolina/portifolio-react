@@ -21,11 +21,11 @@ export const LeftSideInfos = styled.div`
   width: 30%;
   position: relative;
   @media ${devices.laptop} {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
   }
   .bar-lateral {
     position: absolute;
@@ -38,6 +38,7 @@ export const LeftSideInfos = styled.div`
     margin-bottom: 60px;
     display: flex;
     align-items: center;
+
     .container-icon {
       width: 55px;
       height: 55px;
@@ -75,6 +76,9 @@ export const LeftSideInfos = styled.div`
         line-height: 1;
         font-weight: 700;
         margin-bottom: 5px;
+        @media ${devices.laptop} {
+          font-size: 1.8rem;
+        }
       }
       .text {
         opacity: 0.8;
@@ -92,7 +96,7 @@ export const RightSideForm = styled.form`
   flex-wrap: wrap;
   position: relative;
   @media ${devices.laptop} {
-    width: 100%;
+    width: 90%;
     padding-right: 0px;
   }
   span {
@@ -116,12 +120,20 @@ export const RightSideForm = styled.form`
     display: flex;
     flex-direction: column;
     width: 48%;
+    @media ${devices.laptop} {
+    width: 100%;
+    margin-bottom: 20px;
+  }
   }
   .subject {
     width: 100%;
+    @media ${devices.laptop} {
+      margin-bottom: 20px;
+    }
   }
   .message-area {
     width: 100%;
+    
     textarea {
       position: relative;
       z-index: 4;
@@ -149,9 +161,16 @@ export const RightSideForm = styled.form`
     align-items: center;
     justify-content: flex-end;
     margin-top: 20px;
+    @media ${devices.laptop} {
+      flex-direction: column;
+    }
     .conditions {
       color: white;
       margin-right: 50px;
+      @media ${devices.laptop} {
+        margin-right: 0px;
+        margin-bottom: 15px;
+      }
     }
     .btn-send {
       position: relative;
@@ -179,15 +198,14 @@ export const RightSideForm = styled.form`
         background: #29a587;
       }
     }
-
   }
   .pat {
-      position: absolute;
-      width: 260px;
-      bottom: -20px;
-      left: -160px;
-      z-index: 1;
-      filter: invert(1);
-      opacity: 0.5;
-    }
+    position: absolute;
+    width: 260px;
+    bottom: -20px;
+    left: -160px;
+    z-index: 1;
+    filter: invert(1);
+    opacity: 0.5;
+  }
 `;
