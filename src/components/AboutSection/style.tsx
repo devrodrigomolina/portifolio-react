@@ -98,23 +98,12 @@ export const LeftSide = styled.div`
     }
     .sociais {
       margin-top: 40px;
-      display: flex;
-      color: #fff;
-      font-size: 1.5rem;
+      display: inline-block;
       @media ${devices.laptop} {
         align-items: center;
         justify-content: center;
       }
-      .linkedin,
-      .github,
-      .whatsapp {
-        margin-right: 15px;
-        transition: all 0.3s;
-        cursor: pointer;
-        &:hover {
-          color: #29a587;
-        }
-      }
+
     }
     .btns {
       margin-top: 40px;
