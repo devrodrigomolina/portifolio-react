@@ -16,6 +16,11 @@ export const MenuNavigation = styled.div<MenuToogleType>`
   flex-direction: column;
   margin-left: 170px;
   justify-content: space-between;
+
+  .active {
+    transition: all .3s;
+    color: #29a587;
+  }
   a {
     color: #FFF;
     line-height: 1;
@@ -24,7 +29,7 @@ export const MenuNavigation = styled.div<MenuToogleType>`
     letter-spacing: 0.05em;
     font-size: 1.3rem;
     font-weight: 700;
-    transition: all .5s;
+    transition: all .7s ;
     opacity: ${props => props.check ? '1' : '0'};
     &:hover {
       color: #29a587;
