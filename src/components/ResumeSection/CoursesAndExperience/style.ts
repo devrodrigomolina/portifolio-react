@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devices } from "../../../styles/Responsive";
 
 type ShowItemsType = {
   showItems: boolean
@@ -13,6 +14,7 @@ export const CoursesContainer = styled.div<ShowItemsType>`
     overflow: hidden;
     max-height: ${props => (props.showItems ? "500px" : "90px")};
     border-bottom: 2px solid #a3a5a7;
+
     .name {
       padding: 35px 0;
       padding-left: 25px;
@@ -24,6 +26,7 @@ export const CoursesContainer = styled.div<ShowItemsType>`
       font-size: 1.2rem;
       font-weight: 700;
       cursor: pointer;
+ 
     }
     .category-date-course {
       color: white;
@@ -31,6 +34,10 @@ export const CoursesContainer = styled.div<ShowItemsType>`
       padding: 5px 25px;
       align-items: center;
       justify-content: space-between;
+      @media ${devices.mobileL || devices.mobileS || devices.mobileM} {
+        flex-direction: column;
+        align-items: flex-start;
+      }
       .name-course {
         font-family: "Caveat", cursive;
         font-weight: bold;
@@ -38,6 +45,9 @@ export const CoursesContainer = styled.div<ShowItemsType>`
       }
       .date {
         font-weight: bold;
+        @media ${devices.mobileL || devices.mobileS || devices.mobileM} {
+          margin-top: 10px;
+        }
         .date-end {
           color: #29a587;
         }

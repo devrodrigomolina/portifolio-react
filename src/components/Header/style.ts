@@ -13,9 +13,12 @@ export const Header = styled.header`
   justify-content: space-between;
 `
 export const Logo = styled.div`
-  color: white;
   cursor: pointer;
   width: 350px;
+  font-size: 1.2rem;
+  a {
+    color: white;
+  }
   @media ${devices.tablet} {
     width: 280px;
     font-size: 12px;

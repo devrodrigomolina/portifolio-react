@@ -30,7 +30,6 @@ export const AboutContainer = styled.section`
     margin-top: 60px;
     max-width: 100vw;
   }
-  
 `;
 
 export const LeftSide = styled.div`
@@ -44,7 +43,7 @@ export const LeftSide = styled.div`
     text-align: center;
     height: auto;
   }
-  
+
   .infos {
     margin: 100px 0 0 100px;
     @media ${devices.laptop} {
@@ -92,7 +91,7 @@ export const LeftSide = styled.div`
         margin-right: 0;
       }
       @media ${devices.tablet || devices.mobileL} {
-        margin-top: 490px;
+        margin-top: 430px;
       }
     }
     .sociais {
@@ -102,7 +101,6 @@ export const LeftSide = styled.div`
         align-items: center;
         justify-content: center;
       }
-
     }
     .btns {
       margin-top: 40px;
@@ -140,7 +138,6 @@ export const LeftSide = styled.div`
         display: inline-block;
         vertical-align: top;
         font-size: 13px;
-
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.05em;
@@ -171,10 +168,10 @@ export const RigthSide = styled.div`
     width: 70%;
     height: 500px;
     position: absolute;
-    top: 530px;   
+    top: 530px;
   }
   @media ${devices.tablet || devices.mobileL} {
-    top: 420px; 
+    top: 420px;
   }
   .container-photo {
     width: 600px;
@@ -194,7 +191,7 @@ export const RigthSide = styled.div`
       width: 460px;
       height: 430px;
       right: 0px;
-      top: 5%;
+      top: -18%;
     }
     @media ${devices.tablet} {
       width: 340px;
@@ -205,10 +202,10 @@ export const RigthSide = styled.div`
       height: 270px;
       right: 0;
     }
-    
+
     .myphoto {
       border-bottom-left-radius: 47%;
-      border-bottom-right-radius: 47%;   
+      border-bottom-right-radius: 47%;
       width: 105%;
       height: 800px;
       position: absolute;
@@ -219,17 +216,16 @@ export const RigthSide = styled.div`
         height: 695px;
       }
       @media ${devices.laptop} {
-        height: 620px;    
+        height: 620px;
       }
       @media ${devices.tablet} {
-        height: 480px;   
-        top: -110px; 
+        height: 480px;
+        top: -110px;
       }
       @media ${devices.mobileL} {
-        height: 365px; 
+        height: 365px;
         top: -65px;
       }
-    
     }
     .image-pat1,
     .image-pat2,
@@ -244,7 +240,7 @@ export const RigthSide = styled.div`
       bottom: 60px;
       left: -100px;
       @media ${devices.tablet} {
-        width: 110px;    
+        width: 110px;
         left: -70px;
         bottom: 30px;
       }
@@ -267,6 +263,81 @@ export const RigthSide = styled.div`
         width: 90px;
         bottom: 60px;
         right: -50px;
+      }
+    }
+  }
+  .infos-git {
+    position: absolute;
+    top: 400px;
+    left: -125px;
+    z-index: 12;
+    @media ${devices.mobileL} {
+      top: 150px;
+      left: -40px;
+    }
+    .git-stats {
+      width: 100%;
+      height: 180px;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      .stats {
+        color: #fff;
+        border: 2px solid #a3a5a7;
+        background-color: #1d222a;
+        box-shadow: 5px 5px rgb(255 255 255 / 10%);
+        margin: 0;
+        display: flex;
+        align-items: center;
+        box-shadow: 5px 5px rgb(0 0 0 / 20%);
+        height: 82px;
+        border-radius: 82px;
+        width: 250px;
+        padding: 0 20px;
+        @media ${devices.mobileL} {
+          width: 150px;
+          height: 52px;
+        }
+        &:nth-child(1) {
+          margin: -10px 0 0 80px;
+          @media ${devices.mobileL} {
+            margin: 0;
+          }
+        }
+        &:nth-child(2) {
+          margin: 55px 0 0 150px;
+          @media ${devices.mobileL} {
+            margin: 50px 0 0 40px;
+          }
+        }
+        .num {
+          display: block;
+          font-size: 37px;
+          line-height: 20px;
+          text-transform: uppercase;
+          font-weight: 700;
+          width: 50%;
+          text-align: center;
+          @media ${devices.mobileL} {
+            font-size: 25px;
+          }
+        }
+        .value {
+          display: block;
+          width: 50%;
+          text-align: left;
+          font-size: 13px;
+          line-height: 20px;
+          text-transform: uppercase;
+          font-weight: 700;
+          letter-spacing: 0.05em;
+          @media ${devices.mobileL} {
+            font-size: 10px;
+          }
+          span {
+            color: #29a587;
+          }
+        }
       }
     }
   }
