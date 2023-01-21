@@ -43,7 +43,6 @@ export const LeftSide = styled.div`
     align-items: center;
     text-align: center;
     height: auto;
-
   }
   
   .infos {
@@ -209,22 +208,26 @@ export const RigthSide = styled.div`
     
     .myphoto {
       border-bottom-left-radius: 47%;
-      border-bottom-right-radius: 47%;     
-      height: 730px;
+      border-bottom-right-radius: 47%;   
+      width: 105%;
+      height: 800px;
       position: absolute;
-      top: -115px;
+      left: -0px;
+      top: -138px;
+      transform: rotate(5deg);
       @media ${devices.laptopL} {
-        height: 630px;
+        height: 695px;
       }
       @media ${devices.laptop} {
-        height: 550px;    
+        height: 620px;    
       }
       @media ${devices.tablet} {
-        height: 450px;    
+        height: 480px;   
+        top: -110px; 
       }
       @media ${devices.mobileL} {
         height: 365px; 
-        top: -90px;
+        top: -65px;
       }
     
     }
