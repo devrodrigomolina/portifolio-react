@@ -9,12 +9,11 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper";
 import LateralBar from "../LateralBar/LateralBar";
 
-
 const MyServices = () => {
   return (
     <C.ContainerServices id="services">
       <Titles title="OQUE EU FAÇO" subtitle="MEUS" secondSubtitle="Serviços" />
-      
+
       <Swiper
         breakpoints={{
           320: {
@@ -46,10 +45,14 @@ const MyServices = () => {
         modules={[Pagination]}
         className="mySwiper"
       >
-
         {ServicesJson?.map((service) => (
           <SwiperSlide className="swiper-slide">
-            <Cards title={service.title} height={396} subtitle={service.subtitle} desc={service.desc} />
+            <Cards
+              title={service.title}
+              height={396}
+              subtitle={service.subtitle}
+              desc={service.desc}
+            />
           </SwiperSlide>
         ))}
       </Swiper>
