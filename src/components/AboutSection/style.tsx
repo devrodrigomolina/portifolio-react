@@ -125,7 +125,6 @@ export const LeftSide = styled.div`
         color: #fff;
         border-color: #a3a5a7;
         box-shadow: 5px 5px rgb(255 255 255 / 10%);
-
         &:hover {
           background: #29a587;
         }
@@ -172,6 +171,7 @@ export const RigthSide = styled.div`
   }
   @media ${devices.tablet || devices.mobileL} {
     top: 420px;
+    z-index: -1;
   }
   .container-photo {
     width: 600px;
@@ -273,7 +273,7 @@ export const RigthSide = styled.div`
     z-index: 12;
     @media ${devices.mobileL} {
       top: 150px;
-      left: -40px;
+      left: -40px; 
     }
     .git-stats {
       width: 100%;
@@ -296,7 +296,7 @@ export const RigthSide = styled.div`
         padding: 0 20px;
         @media ${devices.mobileL} {
           width: 150px;
-          height: 52px;
+          height: 52px; 
         }
         &:nth-child(1) {
           margin: -10px 0 0 80px;
@@ -307,7 +307,7 @@ export const RigthSide = styled.div`
         &:nth-child(2) {
           margin: 55px 0 0 150px;
           @media ${devices.mobileL} {
-            margin: 50px 0 0 40px;
+            margin: 50px 0 0 40px; 
           }
         }
         .num {
@@ -318,6 +318,9 @@ export const RigthSide = styled.div`
           font-weight: 700;
           width: 50%;
           text-align: center;
+          span {
+            color: #29a587;
+          }
           @media ${devices.mobileL} {
             font-size: 25px;
           }
@@ -331,6 +334,9 @@ export const RigthSide = styled.div`
           text-transform: uppercase;
           font-weight: 700;
           letter-spacing: 0.05em;
+          span {
+            color: #29a587;
+          }
           @media ${devices.mobileL} {
             font-size: 10px;
           }
