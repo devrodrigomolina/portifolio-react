@@ -24,7 +24,7 @@ export const ProjectsJson = [
   {
     projectname: 'Guiador Digital',
     projectType: 'Projeto freelance',
-    desc: 'Aplicação SPA feita com Vue.js/Nuxt.js para o gerenciamento de tarefas. O sistema engloba um painel para a visualização geral das arefas e com gráficos dinâmicos que mudam conforme a atualização do status da tarefa e layout 100% responsivo feito com css puro',
+    desc: 'Este projeto foi produzido para a empresa que trabalho, a Guiador Digital, é uma honra e um prazer trabalhar com esse time. Este projeto foi feito com React + Typescript, e axios para o consumo da API do curso.',
     image: guiador,
     link: 'https://www.guiador.digital/'
   },
