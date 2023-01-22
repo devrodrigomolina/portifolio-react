@@ -2,7 +2,7 @@ import React from "react";
 import Cards from "../Cards/Cards";
 import Titles from "../Titles/Titles";
 import * as C from "./style";
-import { ServicesJson } from "./Services";
+import { TestimonialsJSON } from "./TestimonialsJSON";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -50,7 +50,7 @@ const Testimonials = () => {
           modules={[Pagination]}
           className="mySwiper"
         >
-          {ServicesJson?.map((service) => (
+          {TestimonialsJSON?.map((service) => (
             <SwiperSlide className="swiper-slide">
               <Cards
                 title={service.title}
