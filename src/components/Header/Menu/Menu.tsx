@@ -22,6 +22,7 @@ const Menu = () => {
             smooth={true}
             offset={-200}
             duration={1000}
+            onClick={() => setCheck(false)}
           >
             HOME
           </Link>
@@ -32,6 +33,7 @@ const Menu = () => {
             smooth={true}
             offset={-100}
             duration={1000}
+            onClick={() => setCheck(false)}
           >
             SERVIÇOS
           </Link>
@@ -42,6 +44,7 @@ const Menu = () => {
             smooth={true}
             offset={-100}
             duration={1000}
+            onClick={() => setCheck(false)}
           >
             HABILIDADES
           </Link>
@@ -52,6 +55,7 @@ const Menu = () => {
             smooth={true}
             offset={-100}
             duration={1000}
+            onClick={() => setCheck(false)}
           >
             PORTIFÓLIO
           </Link>
@@ -62,6 +66,7 @@ const Menu = () => {
             smooth={true}
             offset={-100}
             duration={1000}
+            onClick={() => setCheck(false)}
           >
             RESUMO
           </Link>
@@ -72,6 +77,7 @@ const Menu = () => {
             smooth={true}
             offset={-100}
             duration={1000}
+            onClick={() => setCheck(false)}
           >
             AVALIAÇÕES
           </Link>
@@ -82,6 +88,7 @@ const Menu = () => {
             smooth={true}
             offset={-100}
             duration={1000}
+            onClick={() => setCheck(false)}
           >
             CONTATO
           </Link>
