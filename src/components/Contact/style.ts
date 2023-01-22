@@ -129,6 +129,7 @@ export const RightSideForm = styled.form`
     width: 100%;
     @media ${devices.laptop} {
       margin-bottom: 20px;
+      z-index: 4;
     }
   }
   .message-area {
