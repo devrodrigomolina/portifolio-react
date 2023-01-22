@@ -2,9 +2,8 @@ import styled from "styled-components";
 import { devices } from "../../../styles/Responsive";
 
 type ShowItemsType = {
-  showItems: boolean
-}
-
+  showItems: boolean;
+};
 
 export const CoursesContainer = styled.div<ShowItemsType>`
   width: 100%;
@@ -12,7 +11,7 @@ export const CoursesContainer = styled.div<ShowItemsType>`
   .course {
     transition: all 2s;
     overflow: hidden;
-    max-height: ${props => (props.showItems ? "500px" : "90px")};
+    max-height: ${(props) => (props.showItems ? "500px" : "90px")};
     border-bottom: 2px solid #a3a5a7;
 
     .name {
@@ -26,8 +25,11 @@ export const CoursesContainer = styled.div<ShowItemsType>`
       font-size: 1.2rem;
       font-weight: 700;
       cursor: pointer;
+      @media ${devices.mobileM} {
+        font-size: 13px;
+      }
       @media ${devices.mobileL} {
-        font-size: 1rem;
+        font-size: 13px;
       }
     }
     .category-date-course {
@@ -48,7 +50,7 @@ export const CoursesContainer = styled.div<ShowItemsType>`
       .date {
         font-weight: bold;
         font-size: 14px;
-  
+
         @media ${devices.mobileL || devices.mobileS || devices.mobileM} {
           margin-top: 10px;
         }
@@ -62,9 +64,9 @@ export const CoursesContainer = styled.div<ShowItemsType>`
       opacity: 0.5;
       padding: 25px 25px;
     }
-    
+
     &::after {
-      content: '${props => props.showItems ? '-' : '+'}';
+      content: "${(props) => (props.showItems ? "-" : "+")}";
       position: absolute;
       right: -24px;
       bottom: -24px;
@@ -84,4 +86,4 @@ export const CoursesContainer = styled.div<ShowItemsType>`
       z-index: 200;
     }
   }
-    `
+`;
