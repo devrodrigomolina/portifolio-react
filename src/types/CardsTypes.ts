@@ -5,5 +5,7 @@ export type CardsType = {
   desc?: string,
   height?: number,
   projectName?: string,
-  projectType?: string
+  projectType?: string,
+  arrow_text?: string,
+  link?: string
 }
