@@ -52,6 +52,7 @@ const MyServices = () => {
               height={396}
               subtitle={service.subtitle}
               desc={service.desc}
+              arrow_text="Saiba mais"
             />
           </SwiperSlide>
         ))}
