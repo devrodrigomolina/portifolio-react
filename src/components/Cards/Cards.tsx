@@ -11,6 +11,8 @@ const Cards = ({
   subtitle,
   desc,
   height,
+  arrow_text,
+  link
 }: CardsType) => {
   return (
     <BoxAnimation>
@@ -30,9 +32,11 @@ const Cards = ({
             </>
           )}
           <p className="desc">{desc}</p>
-          <a href="#" className="arrow">
-            Ver projeto <FaArrowRight className="icon" />
+         
+          <a href={link} className="arrow" target="_blank">
+            {arrow_text} <FaArrowRight className="icon" />
           </a>
+        
           <div className="image-pat" />
         </div>
       </C.ContainerCards>
