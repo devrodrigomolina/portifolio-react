@@ -8,13 +8,16 @@ type CardsTypes = {
 
 export const ContainerCards = styled.div<CardsTypes>`
   width: 398px;
-  height: ${props => props.height ? props.height : 396}px;
+  min-height: ${props => props.height ? props.height : 396}px;
   background: #1d222a;
   padding: 30px 35px;
   border-radius: 18px;
   position: relative;
   overflow: hidden;
   z-index: 10;
+  @media ${devices.mobileL} {
+    width: 100%;
+  }
   .container-image {
     width: 100%;
     height: 250px;
@@ -24,6 +27,9 @@ export const ContainerCards = styled.div<CardsTypes>`
     align-items: center;
     padding: 0 20px;
     margin-bottom: 30px;
+    @media ${devices.mobileL} {
+      height: 200px;
+    }
     .image {
       width: 100%;
       object-fit: cover;

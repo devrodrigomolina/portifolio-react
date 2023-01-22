@@ -16,6 +16,7 @@ export const Logo = styled.div`
   cursor: pointer;
   width: 350px;
   font-size: 1.2rem;
+  display: flex;
   a {
     color: white;
   }
@@ -25,7 +26,8 @@ export const Logo = styled.div`
   }
   @media ${devices.mobileL} {
     width: 240px;
-    font-size: 11px;
+    font-size: 1rem;
+    align-items: center;
   }
   span {
     color: #29A587;

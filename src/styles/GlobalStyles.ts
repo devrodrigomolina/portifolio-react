@@ -5,7 +5,13 @@ export const GlobalStyles = createGlobalStyle`
  *, ::after, ::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;    
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;  
   }
   a {
     text-decoration: none;
@@ -56,7 +62,7 @@ export const GlobalStyles = createGlobalStyle`
     text-align: center;
     font-weight: bold;
     font-family: "Caveat", cursive;
-    z-index: 0;
+    z-index: -1;
     cursor: default;
   }
 

@@ -15,6 +15,7 @@ export const ContainerServices = styled.div`
     margin-right: 100px;
   }
   .bg-text {
+    z-index: 1;
     @media ${devices.tablet || devices.mobileL} {
       bottom: 260px;
     }

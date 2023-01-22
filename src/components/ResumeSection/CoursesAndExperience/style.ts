@@ -26,7 +26,9 @@ export const CoursesContainer = styled.div<ShowItemsType>`
       font-size: 1.2rem;
       font-weight: 700;
       cursor: pointer;
- 
+      @media ${devices.mobileL} {
+        font-size: 1rem;
+      }
     }
     .category-date-course {
       color: white;
@@ -45,6 +47,8 @@ export const CoursesContainer = styled.div<ShowItemsType>`
       }
       .date {
         font-weight: bold;
+        font-size: 14px;
+  
         @media ${devices.mobileL || devices.mobileS || devices.mobileM} {
           margin-top: 10px;
         }

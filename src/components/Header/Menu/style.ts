@@ -16,7 +16,10 @@ export const MenuNavigation = styled.div<MenuToogleType>`
   flex-direction: column;
   margin-left: 170px;
   justify-content: space-between;
-
+  @media ${devices.mobileL} {
+    margin-left: 0;
+    align-items: center;
+  }
   .active {
     transition: all .3s;
     color: #29a587;
