@@ -321,8 +321,12 @@ export const RigthSide = styled.div`
           span {
             color: #29a587;
           }
+          @media ${devices.mobileM} {
+            width: 40%;
+          }
           @media ${devices.mobileL} {
-            font-size: 25px;
+            width: 40%;
+            font-size: 20px;
           }
         }
         .value {
