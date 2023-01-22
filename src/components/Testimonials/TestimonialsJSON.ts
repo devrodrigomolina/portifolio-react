@@ -1,6 +1,6 @@
 
 
-export const ServicesJson = [
+export const TestimonialsJSON = [
   {
     title: 'DESENVOLVEDOR WEB',
     subtitle: 'Sites & aplicações',
