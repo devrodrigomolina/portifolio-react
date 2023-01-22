@@ -19,6 +19,8 @@ const Projects = () => {
               projectType={project.projectType}
               projectName={project.projectname}
               height={570}
+              arrow_text="Ver projeto"
+              link={project.link}
             />
           ))}
         </div>
