@@ -114,6 +114,14 @@ export const ContainerCards = styled.div<CardsTypes>`
           background-position: center center;
           background-repeat: no-repeat;
           background-size: contain;
+          @media ${devices.mobileM} {
+            right: 0;
+            bottom: 0;
+          }
+          @media ${devices.mobileL} {
+            right: 0;
+            bottom: 0;
+          }
           @media ${devices.laptopL} {
             width: 100px;
             height: 100px;
