@@ -31,7 +31,7 @@ export const ProjectsJson = [
   {
     projectname: 'Stabel Piercing',
     projectType: 'Projeto freelance',
-    desc: 'Este projeto foi esafiador, pois o cliente me passou apenas as cores e as fontes que ele gostaria de ter no site dele, Mas como sou apaixonado por desafios fui fazendo detalhe por detalhe até chegar neste resultado, E o mais importante é que o cliente ficou bem satisfeito com o resultado.',
+    desc: 'Este projeto foi desafiador, pois o cliente me passou apenas as cores e as fontes que ele gostaria de ter no site dele, Mas como sou apaixonado por desafios fui fazendo detalhe por detalhe até chegar neste resultado, E o mais importante é que o cliente ficou bem satisfeito com o resultado.',
     image: stabel,
     link: 'https://stabelpiercing.vercel.app/'
   },
