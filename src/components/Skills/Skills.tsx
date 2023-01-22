@@ -14,13 +14,13 @@ const Skills = () => {
         subtitle="MEU"
         secondSubtitle="Talento"
       />
-      <BoxAnimation>
-        <div className="habilities">
-          <div className="bar">
-            <LateralBar />
-          </div>
+      <div className="habilities">
+        <div className="bar">
+          <LateralBar />
+        </div>
 
-          {SkillsJson.map((skills) => (
+        {SkillsJson.map((skills) => (
+          <BoxAnimation>
             <div className="card">
               <div className="title-value">
                 <p className="title">{skills.tech}</p>
@@ -32,10 +32,10 @@ const Skills = () => {
               <p className="description">{skills.description}</p>
               <ProgressBar value={skills.value} />
             </div>
-          ))}
-        </div>
-        <h1 className="bg-text">Skills</h1>
-      </BoxAnimation>
+          </BoxAnimation>
+        ))}
+      </div>
+      <h1 className="bg-text">Skills</h1>
     </C.ContainerSkills>
   );
 };
