@@ -6,8 +6,22 @@ import pat2 from "../../assets/pat2.png";
 import Socias from "../Sociais/Socias";
 import { Link } from "react-scroll";
 import BoxAnimation from "../../hooks/useAnimationsScroll";
-
+import { useEffect, useState } from "react";
+type githubDataType = {
+  public_repos: number,
+}
 const About = () => {
+  const [githubData, setGithubData] = useState<any>(null)
+  console.log(githubData)
+  const githubFetch = async () => {
+    const response = await fetch('https://api.github.com/users/devrodrigomolina/repos')
+    const responseJson = await response.json()
+    setGithubData(responseJson)
+  }
+  useEffect(() => {
+    githubFetch()
+  }, [])
+
   return (
     <C.AboutSection id="home">
       <BoxAnimation>
@@ -67,7 +81,7 @@ const About = () => {
                 <ul className="git-stats">
                   <li className="stats">
                     <span className="num">
-                      32
+                      {githubData?.length}
                     </span>
                     <span className="value">
                       <span>PROJETOS</span> COMPLETOS
@@ -75,10 +89,10 @@ const About = () => {
                   </li>
                   <li className="stats">  
                     <span className="num">
-                      835
+                      2 <span>+</span>
                     </span>
                     <span className="value">
-                      COMMITS
+                      ANOS DE <span>EXPERIENCIA</span>
                     </span>                  
                   </li>
                 </ul>
