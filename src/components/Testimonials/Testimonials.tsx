@@ -50,8 +50,8 @@ const Testimonials = () => {
           modules={[Pagination]}
           className="mySwiper"
         >
-          {TestimonialsJSON?.map((service) => (
-            <SwiperSlide className="swiper-slide">
+          {TestimonialsJSON?.map((service, index) => (
+            <SwiperSlide key={index} className="swiper-slide">
               <Cards
                 title={service.title}
                 height={396}

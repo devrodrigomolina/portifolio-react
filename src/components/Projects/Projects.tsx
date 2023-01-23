@@ -14,6 +14,7 @@ const Projects = () => {
         <div className="cards-container">
           {ProjectsJson.map((project) => (
             <Cards
+              key={project.projectname}
               image={project.image}
               desc={project.desc}
               projectType={project.projectType}

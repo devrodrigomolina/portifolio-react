@@ -19,8 +19,8 @@ const Skills = () => {
           <LateralBar />
         </div>
 
-        {SkillsJson.map((skills) => (
-          <BoxAnimation>
+        {SkillsJson.map((skills, index) => (
+          <BoxAnimation key={index}>
             <div className="card">
               <div className="title-value">
                 <p className="title">{skills.tech}</p>
