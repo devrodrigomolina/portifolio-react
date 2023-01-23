@@ -26,8 +26,8 @@ export const GlobalStyles = createGlobalStyle`
   body {
     background-color: #222831;
     font-family: 'Jost', sans-serif;
-  
   }
+
   a {
     cursor: pointer;
     text-decoration: none;
@@ -62,7 +62,7 @@ export const GlobalStyles = createGlobalStyle`
     text-align: center;
     font-weight: bold;
     font-family: "Caveat", cursive;
-    z-index: -1;
+    z-index: -7;
     cursor: default;
   }
 
@@ -76,6 +76,11 @@ export const GlobalStyles = createGlobalStyle`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    z-index: 10;
+    @media ${devices.laptopL} {
+      max-width: 85vw;
+      padding: 0 0px;
+    }
     @media ${devices.mobileM && devices.mobileL} {
       max-width: 90vw;
       padding: 0;

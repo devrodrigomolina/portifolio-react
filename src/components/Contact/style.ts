@@ -27,13 +27,7 @@ export const LeftSideInfos = styled.div`
     justify-content: center;
     align-items: start;
   }
-  .bar-lateral {
-    position: absolute;
-    height: 660px;
-    left: -130px;
-    top: -230px;
-    z-index: 10;
-  }
+
   .principal-title {
     margin-bottom: 60px;
     display: flex;
@@ -95,6 +89,17 @@ export const RightSideForm = styled.form`
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
+  .bar-lateral {
+    position: absolute;
+    height: 660px;
+    right: -200px;
+    top: -230px;
+    z-index: 10;
+    @media ${devices.laptopL} {
+      right: -170px;
+      top: -100px;
+    }
+  }
   @media ${devices.laptop} {
     width: 90%;
     padding-right: 0px;

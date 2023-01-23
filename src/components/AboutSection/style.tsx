@@ -26,6 +26,7 @@ export const AboutContainer = styled.section`
     flex-direction: column;
     align-items: center;
   }
+
   @media ${devices.tablet || devices.mobileL} {
     margin-top: 60px;
     max-width: 100vw;
@@ -37,6 +38,9 @@ export const LeftSide = styled.div`
   height: 620px;
   z-index: 2;
   display: flex;
+  @media ${devices.laptopL} {
+    width: 75%;
+  }
   @media ${devices.laptop} {
     justify-content: center;
     align-items: center;
@@ -50,6 +54,11 @@ export const LeftSide = styled.div`
       width: 90%;
       margin: 80px 0 0 0;
     }
+/*     @media ${devices.laptopL} {
+      width: 450px;
+      margin: 60px 0 0 70px;
+      border: 1px solid red;
+    } */
     @media ${devices.tablet || devices.mobileL} {
       margin: 50px 0 0 0;
     }
@@ -63,6 +72,9 @@ export const LeftSide = styled.div`
       font-size: 5rem;
       @media ${devices.laptop} {
         font-size: 7vw;
+      }
+      @media ${devices.laptopL} {
+        font-size: 5vw;
       }
       color: white;
       text-shadow: 3px 3px #000000b3;
@@ -163,6 +175,7 @@ export const RigthSide = styled.div`
   z-index: 4;
   width: 60%;
   position: relative;
+
   @media ${devices.laptop} {
     width: 70%;
     height: 500px;
@@ -182,6 +195,7 @@ export const RigthSide = styled.div`
     align-items: center;
     position: absolute;
     top: 10%;
+  
     @media ${devices.laptopL} {
       width: 500px;
       height: 500px;

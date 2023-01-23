@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devices } from "../../styles/Responsive";
 
 export const ContainerProjects = styled.div`
   display: flex;
@@ -14,6 +15,10 @@ export const ContainerProjects = styled.div`
     top: 90px;
     z-index: 10;
     margin-right: 100px;
+    @media ${devices.laptopL} {
+      top: -100px;
+      margin-right: 40px;
+    }
   }
   .cards-container {
     max-width: 80vw;
@@ -22,6 +27,10 @@ export const ContainerProjects = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+    @media ${devices.laptopL} {
+      max-width: 90vw;
+      justify-content: space-around;
+    }
     .infos-card {
       display: flex;
       flex-direction: column;

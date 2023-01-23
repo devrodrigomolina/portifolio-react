@@ -5,7 +5,6 @@ export const ContainerServices = styled.div`
   background-color: transparent;
   background-image: linear-gradient(180deg, #31363c 0%, #222831 100%);
   position: relative;
-  
   .bar-lateral {
     position: absolute;
     height: 660px;
@@ -13,6 +12,10 @@ export const ContainerServices = styled.div`
     top: 200px;
     z-index: 10;
     margin-right: 100px;
+    @media ${devices.laptopL} {
+      margin-right: 50px;
+      top: 100px;
+    }
   }
   .bg-text {
     z-index: 1;

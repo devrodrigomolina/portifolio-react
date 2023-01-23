@@ -21,6 +21,9 @@ export const ContainerHistory = styled.div`
   width: 70vw;
   margin: 0 auto;
   position: relative;
+  @media ${devices.laptopL} {
+    width: 75vw;
+  }
   @media ${devices.laptop} {
     width: 90vw;
     align-items: center;
@@ -29,6 +32,10 @@ export const ContainerHistory = styled.div`
     position: absolute;
     height: calc(100% + 150px);
     left: -100px;
+    @media ${devices.laptopL} {
+      left: -70px;
+      top: -30px;
+    }
   } 
   @media ${devices.laptop} {
     flex-direction: column;
