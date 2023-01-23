@@ -22,7 +22,7 @@ const Resume = () => {
           </C.LeftSide>
 
           <C.RightSide>
-            <h1 className="titles">Experiencia</h1>
+            <h1 className="titles">Experiência</h1>
             {JSONExperience.map((elements) => (
               <CoursesAndExperience key={elements.id} elements={elements} />
             ))}
