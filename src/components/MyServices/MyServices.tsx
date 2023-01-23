@@ -12,7 +12,7 @@ import LateralBar from "../LateralBar/LateralBar";
 const MyServices = () => {
   return (
     <C.ContainerServices id="services">
-      <Titles title="OQUE EU FAÇO" subtitle="MEUS" secondSubtitle="Serviços" />
+      <Titles title="O QUE EU FAÇO" subtitle="MEUS" secondSubtitle="Serviços" />
 
       <Swiper
         breakpoints={{
@@ -45,14 +45,15 @@ const MyServices = () => {
         modules={[Pagination]}
         className="mySwiper"
       >
-        {ServicesJson?.map((service) => (
-          <SwiperSlide className="swiper-slide">
+        {ServicesJson?.map((service, index) => (
+          <SwiperSlide key={index} className="swiper-slide">
             <Cards
               title={service.title}
               height={396}
               subtitle={service.subtitle}
               desc={service.desc}
               arrow_text="Saiba mais"
+              link={service.link}
             />
           </SwiperSlide>
         ))}
