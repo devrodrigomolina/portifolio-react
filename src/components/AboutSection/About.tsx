@@ -6,21 +6,12 @@ import pat2 from "../../assets/pat2.png";
 import Socias from "../Sociais/Socias";
 import { Link } from "react-scroll";
 import BoxAnimation from "../../hooks/useAnimationsScroll";
-import { useEffect, useState } from "react";
+
 type githubDataType = {
-  public_repos: number,
-}
-const About = () => {
-  const [githubData, setGithubData] = useState<any>(null)
-  console.log(githubData)
-  const githubFetch = async () => {
-    const response = await fetch('https://api.github.com/users/devrodrigomolina/repos')
-    const responseJson = await response.json()
-    setGithubData(responseJson)
-  }
-  useEffect(() => {
-    githubFetch()
-  }, [])
+  reposQtd: number | undefined
+};
+
+const About = ({ reposQtd }: githubDataType) => {
 
   return (
     <C.AboutSection id="home">
@@ -40,7 +31,7 @@ const About = () => {
               </h3>
 
               <p className="aboutme">
-                Possuo uma vasta experiencia com Desenvolvimento front end, com
+                Possuo uma vasta experiência com Desenvolvimento front end, com
                 as principais tecnologias do mercado.
               </p>
 
@@ -49,12 +40,7 @@ const About = () => {
               </div>
 
               <div className="btns">
-                <a
-                  href="/cv.pdf"
-                  download
-                  target="_blank"
-                  className="btn"
-                >
+                <a href="/cv.pdf" download target="_blank" className="btn">
                   <span>DOWNLOAD CV</span>
                 </a>
                 <Link
@@ -80,20 +66,18 @@ const About = () => {
               <div className="infos-git">
                 <ul className="git-stats">
                   <li className="stats">
-                    <span className="num">
-                      {githubData?.length}
-                    </span>
+                    <span className="num">{reposQtd}</span>
                     <span className="value">
                       <span>PROJETOS</span> COMPLETOS
                     </span>
                   </li>
-                  <li className="stats">  
+                  <li className="stats">
                     <span className="num">
                       2 <span>+</span>
                     </span>
                     <span className="value">
-                      ANOS DE <span>EXPERIENCIA</span>
-                    </span>                  
+                      ANOS DE <span>EXPERIÊNCIA</span>
+                    </span>
                   </li>
                 </ul>
               </div>
