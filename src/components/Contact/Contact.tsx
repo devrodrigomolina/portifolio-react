@@ -32,9 +32,6 @@ const Contact = () => {
       <BoxAnimation>
         <C.ContainerContact>
           <C.LeftSideInfos>
-            <div className="bar-lateral">
-              <LateralBar />
-            </div>
             <div className="principal-title">
               <div className="container-icon">
                 <FaRegMap className="icon" />
@@ -110,6 +107,9 @@ const Contact = () => {
               <button className="btn-send">Enviar mensagem</button>
             </div>
             <img className="pat" src={pat1} alt="" />
+          <div className="bar-lateral">
+            <LateralBar />
+          </div>
           </C.RightSideForm>
         </C.ContainerContact>
         <h1 className="bg-text">Contatos</h1>
