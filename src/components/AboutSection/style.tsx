@@ -303,16 +303,19 @@ export const RigthSide = styled.div`
     }
     @media ${devices.tablet} {
       top: 140px;
-      left: -80px;
+      left: -40px;
       padding: 0 10px;
     }
+
     .git-stats {
       width: 100%;
       height: 180px;
       z-index: 100;
       display: flex;
       justify-content: space-between;
-
+      @media ${devices.tablet} {
+        width: 80%;
+      }
       .stats {
         color: #fff;
         border: 2px solid #a3a5a7;
@@ -349,7 +352,7 @@ export const RigthSide = styled.div`
             margin: 50px 0 0 40px; 
           }
           @media ${devices.tablet} {
-            margin: 80px 0 0 100px; 
+            margin: 80px 0 0 0; 
           }
         }
         .num {
