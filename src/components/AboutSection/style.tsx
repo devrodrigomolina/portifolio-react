@@ -25,6 +25,7 @@ export const AboutContainer = styled.section`
   @media ${devices.laptop} {
     flex-direction: column;
     align-items: center;
+    padding-top: 0;
   }
 
   @media ${devices.tablet || devices.mobileL} {
@@ -47,6 +48,9 @@ export const LeftSide = styled.div`
     text-align: center;
     height: auto;
   }
+  @media ${devices.laptopM} {
+    margin-top: 80px;
+  }
 
   .infos {
     margin: 100px 0 0 100px;
@@ -54,11 +58,9 @@ export const LeftSide = styled.div`
       width: 90%;
       margin: 80px 0 0 0;
     }
-/*     @media ${devices.laptopL} {
-      width: 450px;
-      margin: 60px 0 0 70px;
-      border: 1px solid red;
-    } */
+    @media ${devices.laptopM} {
+      margin: 80px 0 0 60px;
+    }
     @media ${devices.tablet || devices.mobileL} {
       margin: 50px 0 0 0;
     }
@@ -99,7 +101,7 @@ export const LeftSide = styled.div`
       color: #a3a5a7;
       margin-top: 40px;
       @media ${devices.laptop} {
-        margin-top: 740px;
+        padding-top: 40px;
         margin-right: 0;
       }
       @media ${devices.tablet || devices.mobileL} {
@@ -289,12 +291,28 @@ export const RigthSide = styled.div`
       top: 150px;
       left: -40px; 
     }
+
+    @media ${devices.laptop} {
+      top: 230px;
+      left: -185px;
+      width: 100vw;
+    }
+    @media ${devices.laptopM} {
+      top: 300px;
+      left: -165px;
+    }
+    @media ${devices.tablet} {
+      top: 140px;
+      left: -80px;
+      padding: 0 10px;
+    }
     .git-stats {
       width: 100%;
       height: 180px;
       z-index: 100;
       display: flex;
       justify-content: space-between;
+
       .stats {
         color: #fff;
         border: 2px solid #a3a5a7;
@@ -312,9 +330,16 @@ export const RigthSide = styled.div`
           width: 150px;
           height: 52px; 
         }
+        @media ${devices.tablet} {
+          width: 150px;
+          height: 72px;
+        }
         &:nth-child(1) {
           margin: -10px 0 0 80px;
           @media ${devices.mobileL} {
+            margin: 0;
+          }
+          @media ${devices.tablet} {
             margin: 0;
           }
         }
@@ -322,6 +347,9 @@ export const RigthSide = styled.div`
           margin: 55px 0 0 150px;
           @media ${devices.mobileL} {
             margin: 50px 0 0 40px; 
+          }
+          @media ${devices.tablet} {
+            margin: 80px 0 0 100px; 
           }
         }
         .num {
@@ -332,6 +360,10 @@ export const RigthSide = styled.div`
           font-weight: 700;
           width: 50%;
           text-align: center;
+          @media ${devices.tablet} {
+            font-size: 20px;
+            width: 40%;
+          }
           span {
             color: #29a587;
           }
@@ -360,6 +392,9 @@ export const RigthSide = styled.div`
           }
           span {
             color: #29a587;
+          }
+          @media ${devices.tablet} {
+            font-size: 10px;
           }
         }
       }

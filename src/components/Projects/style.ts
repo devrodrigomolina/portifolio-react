@@ -7,7 +7,6 @@ export const ContainerProjects = styled.div`
   position: relative;
   background-color: transparent;
   background-image: linear-gradient(0deg, #31363c 0%, #222831 100%);
-  
   .bar-lateral {
     position: absolute;
     height: calc(100% - 300px) ;
@@ -26,11 +25,13 @@ export const ContainerProjects = styled.div`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
-    @media ${devices.laptopL} {
-      max-width: 90vw;
+
+ 
+    @media ${devices.desktop} {
+      max-width: 85vw;
       justify-content: space-around;
     }
+    
     .infos-card {
       display: flex;
       flex-direction: column;

@@ -18,7 +18,7 @@ export const ContainerContact = styled.div`
   }
 `;
 export const LeftSideInfos = styled.div`
-  width: 30%;
+  width: 40%;
   position: relative;
   @media ${devices.laptop} {
     width: 90%;
@@ -89,6 +89,9 @@ export const RightSideForm = styled.form`
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
+  @media ${devices.laptopM} {
+    padding-right: 0;
+  }
   .bar-lateral {
     position: absolute;
     height: 660px;
@@ -126,9 +129,9 @@ export const RightSideForm = styled.form`
     flex-direction: column;
     width: 48%;
     @media ${devices.laptop} {
-    width: 100%;
-    margin-bottom: 20px;
-  }
+      width: 100%;
+      margin-bottom: 20px;
+    }
   }
   .subject {
     width: 100%;
@@ -139,7 +142,7 @@ export const RightSideForm = styled.form`
   }
   .message-area {
     width: 100%;
-    
+
     textarea {
       position: relative;
       z-index: 4;
@@ -165,7 +168,7 @@ export const RightSideForm = styled.form`
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     margin-top: 20px;
     @media ${devices.laptop} {
       flex-direction: column;
@@ -176,6 +179,9 @@ export const RightSideForm = styled.form`
       @media ${devices.laptop} {
         margin-right: 0px;
         margin-bottom: 15px;
+      }
+      @media ${devices.laptopL} {
+        margin-right: 22px;
       }
     }
     .btn-send {
@@ -199,7 +205,9 @@ export const RightSideForm = styled.form`
       color: #fff;
       border-color: #a3a5a7;
       box-shadow: 5px 5px rgb(255 255 255 / 10%);
-
+      @media ${devices.laptopL} {
+        width: 40%;
+      }
       &:hover {
         background: #29a587;
       }
@@ -207,11 +215,16 @@ export const RightSideForm = styled.form`
   }
   .pat {
     position: absolute;
-    width: 260px;
-    bottom: -20px;
-    left: -160px;
+    width: 210px;
+    bottom: 20px;
+    left: -130px;
     z-index: 1;
     filter: invert(1);
-    opacity: 0.5;
+    opacity: 0.3;
+    @media ${devices.laptopL} {
+      width: 150px;
+      bottom: 50px;
+      left: -100px;
+    }
   }
 `;

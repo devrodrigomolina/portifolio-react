@@ -15,14 +15,14 @@ export const ContainerCards = styled.div<CardsTypes>`
   position: relative;
   overflow: hidden;
   z-index: 10;
-
+ margin: 20px;
   @media ${devices.laptopL} {
-    margin-bottom: 30px;
     width: 348px;
   }
   @media ${devices.mobileL} {
     width: 100%;
   }
+
   .container-image {
     width: 100%;
     height: 250px;

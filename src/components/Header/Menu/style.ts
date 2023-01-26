@@ -10,11 +10,11 @@ export const MenuContainer = styled.div``
 
 
 export const MenuNavigation = styled.div<MenuToogleType>`
-  width: 100%;
+  width: 460px;
   height: 400px;
   display: flex;
   flex-direction: column;
-  margin-left: 170px;
+  align-items: center;
   justify-content: space-between;
   @media ${devices.mobileL} {
     margin-left: 0;
@@ -38,6 +38,7 @@ export const MenuNavigation = styled.div<MenuToogleType>`
       color: #29a587;
     }
   }
+ 
   .sociais {
     max-width: 120px;
     color: #FFF;

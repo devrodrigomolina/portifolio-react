@@ -70,17 +70,21 @@ const Menu = () => {
           >
             RESUMO
           </Link>
-          <Link
-            to="testimonials"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={1000}
-            onClick={() => setCheck(false)}
-          >
-            AVALIAÇÕES
-          </Link>
+{/*           <div className="testimonials-container">
+            <Link
+              to="testimonials"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={1000}
+              onClick={() => setCheck(false)}
+              className="testimonials"
+            >
+              AVALIAÇÕES
+            </Link>
+            <span className="inDev">(em desenvolvimento)</span>
+          </div> */}
           <Link
             to="contact"
             activeClass="active"
