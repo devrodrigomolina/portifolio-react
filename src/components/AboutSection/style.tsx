@@ -326,6 +326,7 @@ export const RigthSide = styled.div`
         }
         @media ${devices.mobileL} {
           width: 130px;
+          justify-content: space-between;
         }
         &:nth-child(1) {
           /* margin: 0  0 150px80px; */
@@ -367,8 +368,9 @@ export const RigthSide = styled.div`
             width: 40%;
           }
           @media ${devices.mobileL} {
-            width: 40%;
-            font-size: 20px;
+            display: flex;
+            width: 30%;
+            font-size: 15px;
           }
         }
         .value {
@@ -380,12 +382,13 @@ export const RigthSide = styled.div`
           text-transform: uppercase;
           font-weight: 700;
           letter-spacing: 0.05em;
+          @media ${devices.mobileL} {
+            width: 70%;
+          }
           span {
             color: #29a587;
           }
-          @media ${devices.mobileL} {
-            font-size: 10px;
-          }
+    
           span {
             color: #29a587;
           }
