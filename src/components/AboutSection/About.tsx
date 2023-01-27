@@ -63,6 +63,8 @@ const About = ({ reposQtd }: githubDataType) => {
               <img className="myphoto" src={myphoto} alt="" />
               <img className="image-pat2" src={pat1} alt="" />
               <img className="image-pat3" src={pat2} alt="" />
+
+              
               <div className="infos-git">
                 <ul className="git-stats">
                   <li className="stats">

@@ -177,7 +177,6 @@ export const RigthSide = styled.div`
   z-index: 4;
   width: 60%;
   position: relative;
-
   @media ${devices.laptop} {
     width: 70%;
     height: 500px;
@@ -197,7 +196,6 @@ export const RigthSide = styled.div`
     align-items: center;
     position: absolute;
     top: 10%;
-  
     @media ${devices.laptopL} {
       width: 500px;
       height: 500px;
@@ -283,37 +281,30 @@ export const RigthSide = styled.div`
     }
   }
   .infos-git {
-    position: absolute;
-    top: 400px;
-    left: -125px;
-    z-index: 12;     
-    @media ${devices.mobileL} {
-      top: 150px;
-      left: -82px;
-    }
-
-    @media ${devices.laptop} {
-      top: 230px;
-      left: -185px;
-      width: 100vw;
-    }
-    @media ${devices.laptopM} {
-      top: 300px;
-      left: -165px;
-    }
-    @media ${devices.tablet} {
-      top: 140px;
-      left: -82px;
-      padding: 0 10px;
-    }
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 70%;
+    z-index: 12;
+    position: relative;
+    border: 1px solid white;
 
     .git-stats {
-      width: 100%;
-      height: 180px;
+      position: absolute;
+      left: -30px;
+      height: 40%;
       z-index: 100;
       display: flex;
       justify-content: space-between;
-  
+      @media ${devices.tablet} {
+        left: -60px;
+      }
+ 
+      @media ${devices.mobileL} {
+        left: 0px;
+        width: 100%;
+        height: 60%;
+      }
       .stats {
         color: #fff;
         border: 2px solid #a3a5a7;
@@ -327,30 +318,37 @@ export const RigthSide = styled.div`
         border-radius: 82px;
         width: 250px;
         padding: 0 20px;
-        @media ${devices.mobileL} {
-          width: 150px;
-          height: 52px; 
+        @media ${devices.laptopL} {
+          width: 200px;
+          height: 72px;
         }
         @media ${devices.tablet} {
           width: 150px;
-          height: 72px;
+          height: 52px;
+        }
+        @media ${devices.mobileL} {
+          width: 130px;
+          border: 1px solid green;
         }
         &:nth-child(1) {
-          margin: -10px 0 0 80px;
+          /* margin: 0  0 150px80px; */
           @media ${devices.mobileL} {
             margin: 0;
           }
           @media ${devices.tablet} {
-            margin: 0 0 0 40px; 
+            margin: 0 0 0 50px; 
+          }
+          @media ${devices.mobileL} {
+            margin: 0 0 0 -25px; 
           }
         }
         &:nth-child(2) {
-          margin: 55px 0 0 150px;
-          @media ${devices.mobileL} {
-            margin: 50px 0 0 40px; 
-          }
+          margin: 85px 0 0 150px;
           @media ${devices.tablet} {
             margin: 60px 0 0 100px; 
+          }
+          @media ${devices.mobileL} {
+            margin: 60px 0 0 65px;
           }
         }
         .num {
