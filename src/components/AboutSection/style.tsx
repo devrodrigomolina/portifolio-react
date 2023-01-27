@@ -287,8 +287,6 @@ export const RigthSide = styled.div`
     height: 70%;
     z-index: 12;
     position: relative;
-    border: 1px solid white;
-
     .git-stats {
       position: absolute;
       left: -30px;
@@ -328,7 +326,6 @@ export const RigthSide = styled.div`
         }
         @media ${devices.mobileL} {
           width: 130px;
-          border: 1px solid green;
         }
         &:nth-child(1) {
           /* margin: 0  0 150px80px; */
