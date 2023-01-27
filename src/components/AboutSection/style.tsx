@@ -341,7 +341,7 @@ export const RigthSide = styled.div`
             margin: 0;
           }
           @media ${devices.tablet} {
-            margin: 0;
+            margin: 0 0 0 40px; 
           }
         }
         &:nth-child(2) {
