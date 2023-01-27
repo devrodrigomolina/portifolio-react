@@ -286,11 +286,10 @@ export const RigthSide = styled.div`
     position: absolute;
     top: 400px;
     left: -125px;
-    z-index: 12; 
-    width: 85vw;
+    z-index: 12;     
     @media ${devices.mobileL} {
       top: 150px;
-      left: -40px; 
+      left: -82px;
     }
 
     @media ${devices.laptop} {
@@ -304,7 +303,7 @@ export const RigthSide = styled.div`
     }
     @media ${devices.tablet} {
       top: 140px;
-      left: -40px;
+      left: -82px;
       padding: 0 10px;
     }
 
@@ -314,9 +313,7 @@ export const RigthSide = styled.div`
       z-index: 100;
       display: flex;
       justify-content: space-between;
-      @media ${devices.tablet} {
-        width: 80%;
-      }
+  
       .stats {
         color: #fff;
         border: 2px solid #a3a5a7;
@@ -353,7 +350,7 @@ export const RigthSide = styled.div`
             margin: 50px 0 0 40px; 
           }
           @media ${devices.tablet} {
-            margin: 80px 0 0 0; 
+            margin: 60px 0 0 100px; 
           }
         }
         .num {
