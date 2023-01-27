@@ -26,6 +26,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     background-color: #222831;
     font-family: 'Jost', sans-serif;
+    overflow-x: hidden;
   }
 
   a {
@@ -139,5 +140,6 @@ export const GlobalStyles = createGlobalStyle`
           background-color: #29a587;
         }
       }
-  }
-`
+    }
+
+`;

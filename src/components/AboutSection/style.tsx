@@ -286,7 +286,8 @@ export const RigthSide = styled.div`
     position: absolute;
     top: 400px;
     left: -125px;
-    z-index: 12;
+    z-index: 12; 
+    width: 85vw;
     @media ${devices.mobileL} {
       top: 150px;
       left: -40px; 
