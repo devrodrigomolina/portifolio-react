@@ -101,7 +101,11 @@ export const LeftSide = styled.div`
       color: #a3a5a7;
       margin-top: 40px;
       @media ${devices.laptop} {
-        padding-top: 40px;
+        padding-top: 640px;
+        margin-right: 0;
+      }
+      @media ${devices.tablet} {
+        padding-top: 140px;
         margin-right: 0;
       }
       @media ${devices.tablet || devices.mobileL} {
@@ -210,6 +214,8 @@ export const RigthSide = styled.div`
     @media ${devices.tablet} {
       width: 340px;
       height: 330px;
+      top: 0;
+      right: 0px;
     }
     @media ${devices.mobileL} {
       width: 270px;
