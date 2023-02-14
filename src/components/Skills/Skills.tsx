@@ -26,7 +26,6 @@ const Skills = () => {
                 <p className="title">{skills.tech}</p>
                 <p className="value">
                   {skills.value}
-                  <span className="percent">%</span>
                 </p>
               </div>
               <p className="description">{skills.description}</p>
