@@ -20,7 +20,7 @@ export const ContainerProjects = styled.div`
     }
   }
   .cards-container {
-    max-width: 80vw;
+    max-width: 70vw;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -28,7 +28,7 @@ export const ContainerProjects = styled.div`
 
  
     @media ${devices.desktop} {
-      max-width: 85vw;
+      max-width: 70vw;
       justify-content: space-around;
     }
     
