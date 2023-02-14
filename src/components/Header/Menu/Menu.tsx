@@ -70,21 +70,20 @@ const Menu = () => {
           >
             RESUMO
           </Link>
-{/*           <div className="testimonials-container">
-            <Link
-              to="testimonials"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={1000}
-              onClick={() => setCheck(false)}
-              className="testimonials"
-            >
-              AVALIAÇÕES
-            </Link>
-            <span className="inDev">(em desenvolvimento)</span>
-          </div> */}
+  
+          <Link
+            to="testimonials"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={1000}
+            onClick={() => setCheck(false)}
+            className="testimonials"
+          >
+            AVALIAÇÕES
+          </Link>
+      
           <Link
             to="contact"
             activeClass="active"
@@ -102,7 +101,7 @@ const Menu = () => {
         </C.MenuNavigation>
       </C.MenuToggle>
 
-      <C.Label htmlFor="check">
+      <C.Label htmlFor="check" check={check}>
         <input type="checkbox" id="check" onChange={() => setCheck(!check)} />
         <span></span>
         <span></span>
