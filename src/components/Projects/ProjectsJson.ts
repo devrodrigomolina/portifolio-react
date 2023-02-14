@@ -17,7 +17,7 @@ export const ProjectsJson = [
   {
     projectname: 'Wooof PetShop',
     projectType: 'Projeto pessoal',
-    desc: 'Este projeto é um marketplace voltado a petshop, Fornecemos linhas de produtos especializados, tais como comida orgânica, ração natural para e uma seleção ampla de guloseimas para cães e gatos.',
+    desc: 'Este projeto é um marketplace feito com React.js, projeto voltado a petshop, Fornecemos linhas de produtos especializados, tais como comida orgânica, ração natural para e uma seleção ampla de guloseimas para cães e gatos.',
     image: petshop,
     link: 'https://wooofpetshop.vercel.app/'
   },
@@ -52,7 +52,7 @@ export const ProjectsJson = [
   {
     projectname: 'WatchFilms',
     projectType: 'Projeto pessoal',
-    desc: 'Este projeto é um site de filmes que consome a API do TMDB(The Movie Data Base), conta com a opção de pesquisar por seus filmes favoritos, Apresenta informações do filme(Sinopse, data de lançamento, categorias e elenco principal), tambem é possivel assistir o trailer dos filmes',
+    desc: 'Este projeto é um site de filmes criado com Vue.js, este projeto consome a API do TMDB(The Movie Data Base), conta com a opção de pesquisar por seus filmes favoritos, Apresenta informações do filme(Sinopse, data de lançamento, categorias e elenco principal), tambem é possivel assistir o trailer dos filmes',
     image: tmdb,
     link: 'https://watchfilms.vercel.app/'
   },
