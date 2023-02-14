@@ -71,7 +71,7 @@ export const MenuToggle = styled.div<MenuToogleType>`
   }
 `;
 
-export const Label = styled.label`
+export const Label = styled.label<MenuToogleType>`
   display: flex;
   flex-direction: column;
   width: 40px;
@@ -107,7 +107,7 @@ export const Label = styled.label`
     display: none;
   }
 
-  input[type="checkbox"]:checked ~ span:nth-of-type(1) {
+  input[type="checkbox"]:${props => props.check ? 'checked' : ''} ~ span:nth-of-type(1) {
     transform-origin: bottom;
     transform: rotatez(45deg) translate(8px, 0px);
     @media ${devices.tablet} {
@@ -115,12 +115,12 @@ export const Label = styled.label`
     }
   }
 
-  input[type="checkbox"]:checked ~ span:nth-of-type(2) {
+  input[type="checkbox"]:${props => props.check ? 'checked' : ''} ~ span:nth-of-type(2) {
     transform-origin: top;
     transform: rotatez(-45deg);
   }
 
-  input[type="checkbox"]:checked ~ span:nth-of-type(3) {
+  input[type="checkbox"]:${props => props.check ? 'checked' : ''} ~ span:nth-of-type(3) {
     transform-origin: bottom;
     width: 50%;
     transform: translate(20px, -9px) rotatez(45deg);
