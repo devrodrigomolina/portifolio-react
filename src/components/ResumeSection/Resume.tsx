@@ -17,14 +17,20 @@ const Resume = () => {
           <C.LeftSide>
             <h1 className="titles">Educação</h1>
             {JSONEducation.map((elements) => (
-              <CoursesAndExperience key={elements.id} elements={elements} />
+              <CoursesAndExperience
+                key={`${elements.id}-${elements.course}`}
+                elements={elements}
+              />
             ))}
           </C.LeftSide>
 
           <C.RightSide>
             <h1 className="titles">Experiência</h1>
             {JSONExperience.map((elements) => (
-              <CoursesAndExperience key={elements.id} elements={elements} />
+              <CoursesAndExperience
+                key={`${elements.id}-${elements.name}`}
+                elements={elements}
+              />
             ))}
           </C.RightSide>
         </C.ContainerHistory>

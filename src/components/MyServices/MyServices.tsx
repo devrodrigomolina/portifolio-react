@@ -46,7 +46,7 @@ const MyServices = () => {
         className="mySwiper"
       >
         {ServicesJson?.map((service, index) => (
-          <SwiperSlide key={index} className="swiper-slide">
+          <SwiperSlide key={service.id} className="swiper-slide">
             <Cards
               title={service.title}
               height={396}
