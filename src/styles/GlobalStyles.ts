@@ -29,6 +29,23 @@ export const GlobalStyles = createGlobalStyle`
     overflow-x: hidden;
   }
 
+  body::-webkit-scrollbar {
+  width: 0.8em;
+  border-radius: 20px;
+  border: none;
+  background-color: #1d222a;
+  
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #29a587;
+  transition: all .3s;
+  &:hover {
+    background-color: #1e836a;
+  }
+}
+
+
   a {
     cursor: pointer;
     text-decoration: none;
