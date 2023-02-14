@@ -12,7 +12,7 @@ export const ContainerProgressBar = styled.div<ProgressTypes>`
  height: 2px;
  background: #a3a5a7;
   .progress {
-    width: ${(props) => props.value === 'BÁSICO' ? '30%' : props.value === 'INTERMEDIÁRIO' ? '50%' : props.value === 'AVANÇADO' ? '100%' : ''};
+    width: ${(props) => props.value === 'BÁSICO' ? '10%' : props.value === 'INTERMEDIÁRIO' ? '50%' : props.value === 'AVANÇADO' ? '100%' : ''};
     height: 2px;
     background-color: #29a587;
     display: flex;
