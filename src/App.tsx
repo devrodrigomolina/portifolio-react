@@ -20,6 +20,23 @@ type githubDataType = {
 function App() {
   const [githubData, setGithubData] = useState<githubDataType | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
+  
+  console.log(`
+    ########  ######## ##     ##    ##     ## #### ##    ## ########   #######  
+    ##     ## ##       ###   ###    ##     ##  ##  ###   ## ##     ## ##     ## 
+    ##     ## ##       #### ####    ##     ##  ##  ####  ## ##     ## ##     ## 
+    ########  ######   ## ### ##    ##     ##  ##  ## ## ## ##     ## ##     ## 
+    ##     ## ##       ##     ##     ##   ##   ##  ##  #### ##     ## ##     ## 
+    ##     ## ##       ##     ##      ## ##    ##  ##   ### ##     ## ##     ## 
+    ########  ######## ##     ##       ###    #### ##    ## ########   #######  
+
+    SE VOCÊ ENCONTRAR ALGUM ERRO, POR FAVOR, REPORTE PARA QUE EU POSSA CORRIGIR!!!
+    
+    GITHUB: https://github.com/devrodrigomolina
+    LINKEDIN: https://www.linkedin.com/in/devrodrigomolina/
+    EMAIL: dev.rodrigomolina@gmail.com
+    WHATSAPP: (44) 99807-0146
+  `)
 
   const githubFetch = async () => {
     const response = await fetch(
@@ -29,7 +46,7 @@ function App() {
     setGithubData(responseJson);
     setLoading(false);
   };
-  console.log(githubData)
+
   useEffect(() => {
     githubFetch();
   }, []);
@@ -50,6 +67,7 @@ function App() {
           <Skills />
           <Projects />
           <Resume />
+          {/* <Testimonials /> */}
           <Contact />
           <Footer />
           <GlobalStyles />
