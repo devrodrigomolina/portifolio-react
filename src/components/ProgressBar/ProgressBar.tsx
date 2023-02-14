@@ -3,7 +3,7 @@ import BoxAnimation from "../../hooks/useAnimationsScroll";
 import * as C from "./style";
 
 type ProgressBarTypes = {
-  value: number;
+  value: string;
 };
 
 const ProgressBar = ({ value }: ProgressBarTypes) => {
