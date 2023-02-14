@@ -31,7 +31,7 @@ export const ContainerSkills = styled.div`
         margin-bottom: 15px;
         color: white;
         font-weight: bold;
-        .percent {
+        .value {
           color: #29a587;
         }
       }
