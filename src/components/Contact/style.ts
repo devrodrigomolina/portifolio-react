@@ -89,6 +89,10 @@ export const RightSideForm = styled.form`
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
+  .error {
+    color: red;
+    margin: 5px 0 0 25px;
+  }
   @media ${devices.laptopM} {
     padding-right: 0;
   }
@@ -142,7 +146,7 @@ export const RightSideForm = styled.form`
   }
   .message-area {
     width: 100%;
-
+    margin-top: 20px;
     textarea {
       position: relative;
       z-index: 4;

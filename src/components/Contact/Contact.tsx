@@ -11,6 +11,7 @@ type Inputs = {
   fullname: string;
   email: string;
   subject: string;
+  message: string
 };
 
 const Contact = () => {
@@ -20,7 +21,15 @@ const Contact = () => {
     watch,
     formState: { errors },
   } = useForm<Inputs>();
-  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
+  const onSubmit: SubmitHandler<Inputs> = (data) => {
+    window.open(`https://wa.me/44998070146?text=%0A
+      *Nome*: ${data.fullname}%0A
+      *Email*: ${data.email}%0A
+      *Assunto*: ${data.subject}%0A
+      *Mensagem*: ${data.message}%0A
+    `)
+
+  } 
 
   return (
     <C.ContainerContactForm id="contact">
@@ -69,14 +78,14 @@ const Contact = () => {
                 SEU NOME COMPLETO <span>*</span>
               </label>
               <input id="full-name" {...register("fullname")} />
-              {errors.fullname && <span>This field is required</span>}
+              {errors.fullname && <span className="error">Este campo é obrigatório *</span>}
             </div>
             <div className="email">
               <label htmlFor="email">
                 SEU EMAIL <span>*</span>
               </label>
               <input id="email" {...register("email", { required: true })} />
-              {errors.email && <span>This field is required</span>}
+              {errors.email && <span className="error">Este campo é obrigatório. *</span>}
             </div>
 
             <div className="subject">
@@ -87,7 +96,7 @@ const Contact = () => {
                 id="subject"
                 {...register("subject", { required: true })}
               />
-              {errors.email && <span>This field is required</span>}
+              {errors.subject && <span className="error">Este campo é obrigatório *</span>}
             </div>
 
             <div className="message-area">
@@ -95,11 +104,12 @@ const Contact = () => {
                 SUA MENSAGEM <span>*</span>
               </label>
               <textarea
-                name="message"
-                id="message"
                 cols={70}
                 rows={10}
+                id="message"
+                {...register("message", { required: true })}
               ></textarea>
+              {errors.message && <span className="error">Este campo é obrigatório *</span>}
             </div>
 
             <div className="send">
