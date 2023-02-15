@@ -1,6 +1,8 @@
 import LateralBar from "../LateralBar/LateralBar";
 import * as C from "./style";
 import myphoto from "../../assets/minhafoto2.png";
+import myphotoAvif from "../../assets/minhafoto2.avif";
+import myphotoWebp from "../../assets/minhafoto2.webp";
 import pat1 from "../../assets/pat1.png";
 import pat2 from "../../assets/pat2.png";
 import Socias from "../Sociais/Socias";
@@ -60,7 +62,7 @@ const About = ({ reposQtd }: githubDataType) => {
           <C.RigthSide>
             <div className="container-photo">
               <img className="image-pat1" src={pat1} alt="" />
-              <img className="myphoto" src={myphoto} alt="" />
+              <img className="myphoto" src={myphoto} srcSet={`${myphotoWebp}, ${myphotoAvif}` } alt="" loading="lazy"/>
               <img className="image-pat2" src={pat1} alt="" />
               <img className="image-pat3" src={pat2} alt="" />
 
