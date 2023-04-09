@@ -35,6 +35,12 @@ export const SkillsJson = [
     value: 'INTERMEDIÁRIO',
     description: 'O React é uma biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.'
   },
+  {
+    id: 7,
+    tech: 'JAVA',
+    value: 'BÁSICO',
+    description: 'Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling, na empresa Sun Microsystems, que em 2008 foi adquirido pela empresa Oracle Corporation.'
+  },
 
 
 ]
