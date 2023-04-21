@@ -39,7 +39,7 @@ export const JSONExperience = [
   {
     id: 1,
     name: "Escriba Informática",
-    course: "PROGRAMADOR DE SOFTWARE",
+    course: "Programador de software",
     initialDate: "2023",
     endDate: "PRESENT",
     desc: "Atuo no desenvolvimento e manuntenção de sistemas (SAAS)",
@@ -47,7 +47,7 @@ export const JSONExperience = [
   {
     id: 2,
     name: "Bytes Fritos",
-    course: "Freelance",
+    course: "Desenvolvedor Front-end - Freelance",
     initialDate: "2023",
     endDate: "PRESENT",
     desc: "Desenvolvimento e manutenção de sites e sistemas (SAAS) responsivos e otimizados",
@@ -55,7 +55,7 @@ export const JSONExperience = [
   {
     id: 3,
     name: "Guiador Digital",
-    course: "DESENVOLVEDOR FRONTEND",
+    course: "Desenvolvedor Front-end",
     initialDate: "2021",
     endDate: "PRESENT",
     desc: "Atuo no desenvolvimento de aplicações performática e responsiva com as melhores tecnologias do mercado",
@@ -79,7 +79,7 @@ export const JSONExperience = [
   {
     id: 6,
     name: "Art Liberdade / Liber Glass",
-    course: "VIDRACEIRO",
+    course: "Vidraceiro",
     initialDate: "2012",
     endDate: "2017",
     desc: "Produção de espelhos e vidros, Manutenção e instalação de box e sacadas, Pintura especializada em vidros",
