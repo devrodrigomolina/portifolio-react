@@ -7,7 +7,7 @@ type CardsTypes = {
 };
 
 export const ContainerCards = styled.div<CardsTypes>`
-  width: 398px;
+  width: 400px;
   min-height: ${(props) => (props.height ? props.height : 396)}px;
   background: #1d222a;
   padding: 30px 35px;
@@ -72,6 +72,7 @@ export const ContainerCards = styled.div<CardsTypes>`
       text-align: start;
       opacity: 0.8;
       font-size: 1.1rem;
+      padding-bottom: 10px;
       @media ${devices.laptopL} {
         font-size: 1rem;
       }
@@ -110,7 +111,7 @@ export const ContainerCards = styled.div<CardsTypes>`
       }
     }
     .image-pat {
-      opacity: 0.5;
+      opacity: 0.2;
       filter: invert(1);
       position: absolute;
       right: -24px;

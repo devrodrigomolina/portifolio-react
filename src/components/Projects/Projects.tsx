@@ -20,8 +20,8 @@ const Projects = () => {
               projectType={project.projectType}
               projectName={project.projectname}
               height={570}
-              arrow_text="Ver projeto"
-              link={project.link}
+              arrow_text={project.private ? 'Não disponível' : 'Ver projeto'}
+              link={project.link ? project.link : 'Não disponivel'}
             />
           ))}
         </div>

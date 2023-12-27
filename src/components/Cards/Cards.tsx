@@ -36,7 +36,7 @@ const Cards = ({
             )}
             <p className="desc">{desc}</p>
 
-            <a href={link} className="arrow" target="_blank">
+            <a href={link ? link : ''} className="arrow" target="_blank">
               {arrow_text} <FaArrowRight className="icon" />
             </a>
 

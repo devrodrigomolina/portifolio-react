@@ -1,4 +1,7 @@
 import tasksbook from '../../assets/tasksbook.png'
+import portalSelosRR from '../../assets/portalselos.jpg'
+import founding from '../../assets/founding.jpg'
+import sistemaGM from '../../assets/sistemaguarda.jpg'
 import petshop from '../../assets/wooofpetshop.png'
 import babydev from '../../assets/babydev.png'
 import guiador from '../../assets/guiador.png'
@@ -7,6 +10,28 @@ import casadovidro from '../../assets/casadovidro.png'
 import tmdb from '../../assets/tmdb.png'
 
 export const ProjectsJson = [
+  {
+    projectname: 'Portal do Selo - TJRR',
+    projectType: 'Projeto Corporativo',
+    desc: 'Atuei como programador full stack em uma equipe de desenvolvimento em um projeto que envolveu a criação de uma aplicação web. Essa aplicação foi desenvolvida para fornecer e gerenciar selos digitais no setor notarial no estado de Roraima.',
+    image: portalSelosRR,
+    link: 'https://selororaima.com.br/'
+  },
+  {
+    projectname: 'Sistema de leitura de placas veiculares e ocorrências',
+    projectType: 'Projeto freelance',
+    desc: 'Sistema de ocorrências desenvolvido para a Guarda Municipal de Arapongas, PR, que integra câmeras para a captura automática de placas. Em casos de furto, os policiais podem visualizar informações cruciais, como placa do veículo, imagem ao vivo e outros detalhes, facilitando a resposta rápida e eficiente diante de situações de emergência.',
+    image: sistemaGM,
+    private: true,
+    link: null
+  },
+  {
+    projectname: 'Founding',
+    projectType: 'Projeto freelance',
+    desc: 'Founding é uma plataforma web que oferece um ambiente para gestão de equipes. Atuei nesse projeto como desenvolvedor freelancer Vue.js, realizando a implementação de novas features e correção de bugs.',
+    image: founding,
+    link: 'https://app.founding.com.br/'
+  },
   {
     projectname: 'TasksBook',
     projectType: 'Projeto pessoal',
