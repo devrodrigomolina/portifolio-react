@@ -70,7 +70,7 @@ const About = ({ reposQtd }: githubDataType) => {
               <div className="infos-git">
                 <ul className="git-stats">
                   <li className="stats">
-                    <span className="num">{reposQtd}</span>
+                    <span className="num">{reposQtd} <span>+</span></span>
                     <span className="value">
                       <span>PROJETOS</span> COMPLETOS
                     </span>

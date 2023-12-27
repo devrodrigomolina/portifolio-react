@@ -77,7 +77,7 @@ const Contact = () => {
               <label htmlFor="full-name">
                 SEU NOME COMPLETO <span>*</span>
               </label>
-              <input id="full-name" {...register("fullname")} />
+              <input id="full-name" {...register("fullname", { required: true })} />
               {errors.fullname && <span className="error">Este campo é obrigatório *</span>}
             </div>
             <div className="email">
